@@ -1,194 +1,119 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    // <div>
-    //   <ul>
-    //     <li>
-    //       <Link to="/">Home</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/about-us">About us</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/donar-list">Donar List</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/committee">Committee</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/provincial-committee">Provincial Committee</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/gallery">Gallery</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/events">Events</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/blog">Blog</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/members">Members</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/contact-us">Contact Us</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/privacy-policy">Privacy Policy</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/donate">Donate</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/join">Join</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/login">Login</Link>
-    //     </li>
-    //   </ul>
-    // </div>
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <div className="navbar bg-base-100 flex justify-center">
+      <div className="max-w-[1280px] w-full flex justify-between">
+        <div className="navbar-start w-fit">
+          <div className="dropdown">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about-us">About us</NavLink>
+              </li>
+              <li>
+                <NavLink to="/donar-list">Donar List</NavLink>
+              </li>
+              <li>
+                <NavLink to="/committee">Committee</NavLink>
+              </li>
+              <li>
+                <NavLink to="/provincial-committee">
+                  Provincial Committee
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/gallery">Gallery</NavLink>
+              </li>
+              <li>
+                <NavLink to="/join">Join</NavLink>
+              </li>
+              <li>
+                <NavLink to="/login">Login</NavLink>
+              </li>
+              <li>
+                <NavLink to="/committee">Committee</NavLink>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
+          <a className="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/about-us">About us</Link>
+              <NavLink to="/about-us">About us</NavLink>
             </li>
             <li>
-              <Link to="/donar-list">Donar List</Link>
+              <NavLink to="/donar-list">Donar List</NavLink>
             </li>
             <li>
-              <Link to="/committee">Committee</Link>
+              <NavLink to="/committee">Committee</NavLink>
             </li>
             <li>
-              <Link to="/provincial-committee">Provincial Committee</Link>
+              <details>
+                <summary>Committee</summary>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
             <li>
-              <Link to="/gallery">Gallery</Link>
+              <NavLink to="/provincial-committee">Provincial Committee</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/events">Events</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/join">Join</NavLink>
             </li>
             <li>
-              <Link to="/events">Events</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/members">Members</Link>
-            </li>
-            <li>
-              <Link to="/contact-us">Contact Us</Link>
-            </li>
-            <li>
-              <Link to="/privacy-policy">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link to="/donate">Donate</Link>
-            </li>
-            <li>
-              <Link to="/join">Join</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/committee">Committee</Link>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <NavLink to="/login">Login</NavLink>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about-us">About us</Link>
-          </li>
-          <li>
-            <Link to="/donar-list">Donar List</Link>
-          </li>
-          <li>
-            <Link to="/committee">Committee</Link>
-          </li>
-          <li>
-            <details>
-              <summary>Committee</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <Link to="/provincial-committee">Provincial Committee</Link>
-          </li>
-          <li>
-            <Link to="/gallery">Gallery</Link>
-          </li>
-          <li>
-            <Link to="/events">Events</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/members">Members</Link>
-          </li>
-          <li>
-            <Link to="/contact-us">Contact Us</Link>
-          </li>
-          <li>
-            <Link to="/privacy-policy">Privacy Policy</Link>
-          </li>
-          <li>
-            <Link to="/donate">Donate</Link>
-          </li>
-          <li>
-            <Link to="/join">Join</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
       </div>
     </div>
   );
