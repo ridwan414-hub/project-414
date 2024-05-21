@@ -1,8 +1,8 @@
-export const BasicNameInput = ({ title, name }) => {
+export const TextNameInput = ({ title, name }) => {
     return(
         <div className="sm:col-span-3">
         <label
-          htmlFor="first-name"
+          htmlFor={name}
           className="block text-sm font-medium leading-6 text-gray-900"
         >
           {title}
