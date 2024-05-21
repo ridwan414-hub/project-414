@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -31,31 +31,33 @@ const Header = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <Link to="/about-us">About us</Link>
+                <NavLink to="/about-us">About us</NavLink>
               </li>
               <li>
-                <Link to="/donar-list">Donar List</Link>
+                <NavLink to="/donar-list">Donar List</NavLink>
               </li>
               <li>
-                <Link to="/committee">Committee</Link>
+                <NavLink to="/committee">Committee</NavLink>
               </li>
               <li>
-                <Link to="/provincial-committee">Provincial Committee</Link>
+                <NavLink to="/provincial-committee">
+                  Provincial Committee
+                </NavLink>
               </li>
               <li>
-                <Link to="/gallery">Gallery</Link>
+                <NavLink to="/gallery">Gallery</NavLink>
               </li>
               <li>
-                <Link to="/join">Join</Link>
+                <NavLink to="/join">Join</NavLink>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <NavLink to="/login">Login</NavLink>
               </li>
               <li>
-                <Link to="/committee">Committee</Link>
+                <NavLink to="/committee">Committee</NavLink>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -72,16 +74,16 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/about-us">About us</Link>
+              <NavLink to="/about-us">About us</NavLink>
             </li>
             <li>
-              <Link to="/donar-list">Donar List</Link>
+              <NavLink to="/donar-list">Donar List</NavLink>
             </li>
             <li>
-              <Link to="/committee">Committee</Link>
+              <NavLink to="/committee">Committee</NavLink>
             </li>
             <li>
               <details>
@@ -97,18 +99,18 @@ const Header = () => {
               </details>
             </li>
             <li>
-              <Link to="/provincial-committee">Provincial Committee</Link>
+              <NavLink to="/provincial-committee">Provincial Committee</NavLink>
             </li>
 
             <li>
-              <Link to="/events">Events</Link>
+              <NavLink to="/events">Events</NavLink>
             </li>
 
             <li>
-              <Link to="/join">Join</Link>
+              <NavLink to="/join">Join</NavLink>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <NavLink to="/login">Login</NavLink>
             </li>
           </ul>
         </div>
