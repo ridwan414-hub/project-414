@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui"
+import forms from "@tailwindcss/forms"
 export default {
   content: [
     "./index.html",
@@ -10,6 +11,7 @@ export default {
   },
   plugins: [
     daisyui,
+    forms
   ],
 }
 
