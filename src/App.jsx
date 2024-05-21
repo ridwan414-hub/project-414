@@ -12,7 +12,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Donate from './pages/Donate';
 import Join from './pages/Join';
 import Login from './pages/Login';
-import NotFound from './pages/NotFound';
+// import NotFound from './pages/NotFound';
 import DonarList from './pages/DonarList';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/join" element={<Join />} />
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>
   );
