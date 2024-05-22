@@ -14,6 +14,7 @@ const JoinSection = () => {
             Use a permanent address where you can receive mail.
           </p>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+<<<<<<< HEAD
            
 
             <div className="sm:col-span-3">
@@ -122,6 +123,32 @@ const JoinSection = () => {
                 />
               </div>
             </div>
+=======
+            <TextNameInput
+              title="First Name"
+              name="first-name"
+            />
+            <TextNameInput
+              title="Last Name"
+              name="last-name"
+            />
+            <TextNameInput
+              title="Mobile No(BD)"
+              name="mobile-no-bd"
+            />
+            <TextNameInput
+              title=" Father's name"
+              name="father's-name"
+            />
+            <TextNameInput
+              title=" Mother's name"
+              name="mother's-name"
+            />
+            <TextNameInput
+              title="NID or Passport"
+              name="nid-or-passport"
+            />
+>>>>>>> f8ef35c291286bd38b7e486fdb29aac385b3056b
 
             <div className="sm:col-span-2">
               <label
