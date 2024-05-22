@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -36,7 +36,47 @@ const Header = () => {
                 <NavLink to="/donar-list">Donar List</NavLink>
               </li>
               <li>
+                <NavLink to="/events">Events</NavLink>
+                <ul className="p-2">
+                  <li>
+                    <Link>Upcoming Events</Link>
+                  </li>
+                  <li>
+                    <Link>Yearly Events</Link>
+                  </li>
+                  <li>
+                    <Link>Permanent Events</Link>
+                  </li>
+                  <li>
+                    <Link>Completed Events</Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <NavLink to="/gallery">Gallery</NavLink>
+              </li>
+              <li>
                 <NavLink to="/committee">Committee</NavLink>
+                <ul className="p-2">
+                  <li>
+                    <Link>Advisory Council</Link>
+                  </li>
+                  <li>
+                    <Link>Board of Directors</Link>
+                  </li>
+                  <li>
+                    <Link>Entreprepreneur Council</Link>
+                  </li>
+                  <li>
+                    <Link>Entreprepreneur Council</Link>
+                  </li>
+                  <li>
+                    <Link>Patronage Council</Link>
+                  </li>
+                  <li>
+                    <Link>Representative Council</Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <NavLink to="/provincial-committee">
@@ -44,36 +84,10 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/gallery">Gallery</NavLink>
-              </li>
-              <li>
                 <NavLink to="/join">Join</NavLink>
               </li>
               <li>
                 <NavLink to="/login">Login</NavLink>
-              </li>
-              <li>
-                <NavLink to="/committee">Committee</NavLink>
-                <ul className="p-2">
-                  <li>
-                    <NavLink>Advisory Council</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Board of Directors</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Entreprepreneur Council</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Entreprepreneur Council</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Patronage Council</NavLink>
-                  </li>
-                  <li>
-                    <NavLink>Representative Council</NavLink>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -91,7 +105,26 @@ const Header = () => {
               <NavLink to="/donar-list">Donar List</NavLink>
             </li>
             <li>
-              <NavLink to="/committee">Committee</NavLink>
+              <details>
+                <summary>Events</summary>
+                <ul className="p-2">
+                  <li>
+                    <Link>Upcoming Events</Link>
+                  </li>
+                  <li>
+                    <Link>Yearly Events</Link>
+                  </li>
+                  <li>
+                    <Link>Permanent Events</Link>
+                  </li>
+                  <li>
+                    <Link>Completed Events</Link>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
             </li>
             <li>
               <details>
@@ -121,11 +154,6 @@ const Header = () => {
             <li>
               <NavLink to="/provincial-committee">Provincial Committee</NavLink>
             </li>
-
-            <li>
-              <NavLink to="/events">Events</NavLink>
-            </li>
-
             <li>
               <NavLink to="/join">Join</NavLink>
             </li>
