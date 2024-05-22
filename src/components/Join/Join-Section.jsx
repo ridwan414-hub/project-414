@@ -1,8 +1,19 @@
 import { useState } from "react";
-import { TextNameInput } from "./Join-Form-Elements";
+import { FormEndPart, SelectInput, TextNameInput } from "./Join-Form-Elements";
 const JoinSection = () => {
   const [photo, setPhoto] = useState(null);
   const [document, setDocument] = useState(null);
+  const maritalOptions = ["Married", "Unmarried"];
+  const bloodOptions = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+  const upazillaOptions = [
+    "Upazilla 1",
+    "Upazilla 2",
+    "Upazilla 3",
+    "Upazilla 4",
+    "Upazilla 5",
+  ];
+  const unionOptions = ["Union 1", "Union 2", "Union 3", "Union 4", "Union 5"];
+  const paymentOptions = ["Bkash", "Rocket", "Nagad", "Paypal", "Bank"];
   return (
     <form className="p-12">
       <div className="space-y-12">
@@ -39,209 +50,60 @@ const JoinSection = () => {
               name="nid-or-passport"
             />
 
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="upazilla"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Upazilla
-              </label>
-              <div className="mt-2">
-                <select
-                  id="upazilla"
-                  name="upazilla"
-                  autoComplete="upazilla"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>Upazilla 1</option>
-                  <option>Upazilla 2</option>
-                  <option>Upazilla 3</option>
-                  <option>Upazilla 4</option>
-                  <option>Upazilla 5</option>
-                </select>
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="Union"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Union
-              </label>
-              <div className="mt-2">
-                <select
-                  id="Union"
-                  name="Union"
-                  autoComplete="Union"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>Union 1</option>
-                  <option>Union 2</option>
-                  <option>Union 3</option>
-                  <option>Union 4</option>
-                  <option>Union 5</option>
-                </select>
-              </div>
-            </div>
+            <SelectInput
+              title="Upazilla"
+              name="upazilla"
+              options={upazillaOptions}
+            />
+            <SelectInput
+              title="Union"
+              name="union"
+              options={unionOptions}
+            />
 
-            <div className="col-span-full">
-              <label
-                htmlFor="permanent-address"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Permanent address
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="permanent-address"
-                  id="permanent-address"
-                  autoComplete="permanent-address"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
+            <TextNameInput
+              name="permanent-address"
+              title="Permanent address"
+              className="sm:col-span-full"
+            />
+            <TextNameInput
+              title="Ksa State"
+              name="ksa-state"
+            />
+            <TextNameInput
+              title="Present Address"
+              name="present-address"
+            />
+            <TextNameInput
+              title="Email"
+              name="email"
+              type="email"
+            />
+            <TextNameInput
+              title="Password"
+              name="password"
+              type="password"
+            />
+            <TextNameInput
+              title="Date Of Birth"
+              name="date-of-birth"
+              type="date"
+            />
+            <TextNameInput
+              title="Occupation"
+              name="occupation"
+            />
+            <SelectInput
+              title="Marital Status"
+              name="marital-status"
+              options={maritalOptions}
+            />
+            <SelectInput
+              title="Blood Group"
+              name="blood-group"
+              options={bloodOptions}
+            />
 
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="ksa-state"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Ksa State
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="ksa-state"
-                  id="ksa-state"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="present-address"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Present Address
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="present-address"
-                  id="present-address"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Email
-              </label>
-              <div className="mt-2">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Password
-              </label>
-              <div className="mt-2">
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="date-of-birth"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Date Of Birth
-              </label>
-              <div className="mt-2">
-                <input
-                  type="date"
-                  name="date-of-birth"
-                  id="date-of-birth"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="occupation"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Occupation
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="occupation"
-                  id="occupation"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="marital-status"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Marital Status
-              </label>
-              <div className="mt-2">
-                <select
-                  id="marital-status"
-                  name="marital-status"
-                  autoComplete="marital-status"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>Married</option>
-                  <option>Unmarried</option>
-                </select>
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="blood-group"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Blood Group
-              </label>
-              <div className="mt-2">
-                <select
-                  id="blood-group"
-                  name="blood-group"
-                  autoComplete="blood-group"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>A+</option>
-                  <option>A-</option>
-                  <option>B+</option>
-                  <option>B-</option>
-                  <option>AB+</option>
-                  <option>AB-</option>
-                  <option>O+</option>
-                  <option>O-</option>
-                </select>
-              </div>
-            </div>
             <div className="sm:col-span-3">
               <label
                 htmlFor="photo"
@@ -325,29 +187,11 @@ const JoinSection = () => {
                 </div>
               </fieldset>
             </div>
-
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="payment-gateway"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Payment Gateway
-              </label>
-              <div className="mt-2">
-                <select
-                  id="payment-gateway"
-                  name="payment-gateway"
-                  autoComplete="payment-gateway"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>Bkash</option>
-                  <option>Rocket</option>
-                  <option>Nagad</option>
-                  <option>Paypal</option>
-                  <option>Bank</option>
-                </select>
-              </div>
-            </div>
+            <SelectInput
+              title="Payment Gateway"
+              name="payment-gateway"
+              options={paymentOptions}
+            />
 
             <div className="sm:col-span-3">
               <label
@@ -376,20 +220,7 @@ const JoinSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-6 flex items-center justify-center gap-x-6">
-        <button
-          type="submit"
-          className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        >
-          Save
-        </button>
-        <button
-          type="button"
-          className="text-sm font-semibold leading-6 text-gray-900"
-        >
-          Cancel
-        </button>
-      </div>
+      <FormEndPart />
     </form>
   );
 };
