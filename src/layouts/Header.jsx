@@ -39,16 +39,16 @@ const Header = () => {
                 <NavLink to="/events">Events</NavLink>
                 <ul className="p-2">
                   <li>
-                    <Link>Upcoming Events</Link>
+                    <NavLink to="/upcoming-events">Upcoming Events</NavLink>
                   </li>
                   <li>
-                    <Link>Yearly Events</Link>
+                    <NavLink to="/yearly-events">Yearly Events</NavLink>
                   </li>
                   <li>
-                    <Link>Permanent Events</Link>
+                    <NavLink to="/permanent-events">Permanent Events</NavLink>
                   </li>
                   <li>
-                    <Link>Completed Events</Link>
+                    <NavLink to="/completed-events">Completed Events</NavLink>
                   </li>
                 </ul>
               </li>
@@ -59,22 +59,25 @@ const Header = () => {
                 <NavLink to="/committee">Committee</NavLink>
                 <ul className="p-2">
                   <li>
-                    <Link>Advisory Council</Link>
+                    <NavLink to="/advisory-council">Advisory Council</NavLink>
                   </li>
                   <li>
-                    <Link>Board of Directors</Link>
+                    <NavLink to="/board-of-directors">
+                      Board of Directors
+                    </NavLink>
                   </li>
                   <li>
-                    <Link>Entreprepreneur Council</Link>
+                    <NavLink to="/entrepreneur-council">
+                      Entrepreneur Council
+                    </NavLink>
                   </li>
                   <li>
-                    <Link>Entreprepreneur Council</Link>
+                    <NavLink to="/patronage-council">Patronage Council</NavLink>
                   </li>
                   <li>
-                    <Link>Patronage Council</Link>
-                  </li>
-                  <li>
-                    <Link>Representative Council</Link>
+                    <NavLink to="/representative-council">
+                      Representative Council
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -109,16 +112,16 @@ const Header = () => {
                 <summary>Events</summary>
                 <ul className="p-2">
                   <li>
-                    <Link>Upcoming Events</Link>
+                    <NavLink to="/upcoming-events">Upcoming Events</NavLink>
                   </li>
                   <li>
-                    <Link>Yearly Events</Link>
+                    <NavLink to="/yearly-events">Yearly Events</NavLink>
                   </li>
                   <li>
-                    <Link>Permanent Events</Link>
+                    <NavLink to="/permanent-events">Permanent Events</NavLink>
                   </li>
                   <li>
-                    <Link>Completed Events</Link>
+                    <NavLink to="/completed-events">Completed Events</NavLink>
                   </li>
                 </ul>
               </details>
@@ -131,22 +134,25 @@ const Header = () => {
                 <summary>Committee</summary>
                 <ul className="p-2">
                   <li>
-                    <Link>Advisory Council</Link>
+                    <NavLink to="/advisory-council">Advisory Council</NavLink>
                   </li>
                   <li>
-                    <Link>Board of Directors</Link>
+                    <NavLink to="/board-of-directors">
+                      Board of Directors
+                    </NavLink>
                   </li>
                   <li>
-                    <Link>Entreprepreneur Council</Link>
+                    <NavLink to="/entrepreneur-council">
+                      Entrepreneur Council
+                    </NavLink>
                   </li>
                   <li>
-                    <Link>Entreprepreneur Council</Link>
+                    <NavLink to="/patronage-council">Patronage Council</NavLink>
                   </li>
                   <li>
-                    <Link>Patronage Council</Link>
-                  </li>
-                  <li>
-                    <Link>Representative Council</Link>
+                    <NavLink to="/representative-council">
+                      Representative Council
+                    </NavLink>
                   </li>
                 </ul>
               </details>

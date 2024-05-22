@@ -1,10 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import Committee from './pages/Committee';
 import ProvincialCommittee from './pages/ProvincialCommittee';
 import Gallery from './pages/Gallery';
-import Events from './pages/Events';
 import Blog from './pages/Blog';
 import Members from './pages/Members';
 import ContactUs from './pages/ContactUs';
@@ -25,11 +23,21 @@ import CommitteeController from './components/admin/admin-components/CommitteeCo
 import AdminSetting from './components/admin/admin-components/AdminSetting';
 import BlogController from './components/admin/admin-components/BlogController';
 import AdminLogout from './components/admin/admin-components/AdminLogout';
+import CompletedEvents from './pages/EventPages/CompletedEvents';
+import PermanentEvents from './pages/EventPages/PermanentEvents';
+import UpcomingEvents from './pages/EventPages/UpcomingEvents';
+import YearlyEvents from './pages/EventPages/YearlyEvents';
+import AdvisoryCouncil from './pages/CommitteePages/AdvisoryCouncil';
+import BoardOfDirectors from './pages/CommitteePages/BoardOfDirectors';
+import EntrepreneurCouncil from './pages/CommitteePages/EntrepreneurCouncil';
+import PatronageCouncil from './pages/CommitteePages/PatronageCouncil';
+import RepresentativeCouncil from './pages/CommitteePages/RepresentativeCouncil';
 
 function App() {
   return (
     <>
       <Routes>
+        {/* admin routes */}
         <Route path="/admin" element={<Admin />}>
           <Route path="Dashboard" element={<AdminDashboard />} />
           <Route path="Inbox" element={<Inbox />} />
@@ -42,12 +50,22 @@ function App() {
           <Route path="Blog" element={<BlogController />} />
           <Route path="Logout" element={<AdminLogout />} />
         </Route>
+        {/* event routes */}
+        <Route path="/completed-events" element={<CompletedEvents />} />
+        <Route path="/permanent-events" element={<PermanentEvents />} />
+        <Route path="/upcoming-events" element={<UpcomingEvents />} />
+        <Route path="/yearly-events" element={<YearlyEvents />} />
+        {/* committee routes */}
+        <Route path='/advisory-council' element={<AdvisoryCouncil />} />
+        <Route path='/board-of-directors' element={<BoardOfDirectors />} />
+        <Route path='/entrepreneur-council' element={<EntrepreneurCouncil />} />
+        <Route path='/patronage-council' element={<PatronageCouncil />} />
+        <Route path='/representative-council' element={<RepresentativeCouncil />} />
+        {/* normal routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/committee" element={<Committee />} />
         <Route path="/provincial-committee" element={<ProvincialCommittee />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/events" element={<Events />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/donar-list" element={<DonarList />} />
         <Route path="/members" element={<Members />} />
