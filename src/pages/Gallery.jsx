@@ -2,9 +2,13 @@ import Layout from '../layouts/Layout';
 
 const Gallery = () => {
     return (
-        <Layout title={"Gallery"}>
-            Gallery
-        </Layout>
+      <Layout
+        title={'Gallery'}
+        bannerTitle={'Gallery'}
+        bannerDescription={'Gallery Page Description....'}
+      >
+        Gallery
+      </Layout>
     );
 };
 

@@ -56,6 +56,9 @@ const Header = () => {
                 <NavLink to="/gallery">Gallery</NavLink>
               </li>
               <li>
+                <NavLink to="/blog">Blogs</NavLink>
+              </li>
+              <li>
                 <NavLink to="/committee">Committee</NavLink>
                 <ul className="p-2">
                   <li>
@@ -128,6 +131,9 @@ const Header = () => {
             </li>
             <li>
               <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog">Blogs</NavLink>
             </li>
             <li>
               <details>

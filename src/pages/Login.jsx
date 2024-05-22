@@ -3,7 +3,11 @@ import Layout from '../layouts/Layout';
 
 const Login = () => {
   return (
-    <Layout title={'Log in'}>
+    <Layout
+      title={'Log in'}
+      bannerTitle={'Log in'}
+      bannerDescription={'Log in Page Description....'}
+    >
       <LoginForm />
     </Layout>
   );
