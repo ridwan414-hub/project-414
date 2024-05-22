@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -6,11 +6,7 @@ const Header = () => {
       <div className="max-w-[1280px] w-full flex justify-between">
         <div className="navbar-start w-fit">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -60,10 +56,22 @@ const Header = () => {
                 <NavLink to="/committee">Committee</NavLink>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <NavLink>Advisory Council</NavLink>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <NavLink>Board of Directors</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Entreprepreneur Council</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Entreprepreneur Council</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Patronage Council</NavLink>
+                  </li>
+                  <li>
+                    <NavLink>Representative Council</NavLink>
                   </li>
                 </ul>
               </li>
@@ -90,10 +98,22 @@ const Header = () => {
                 <summary>Committee</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <Link>Advisory Council</Link>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <Link>Board of Directors</Link>
+                  </li>
+                  <li>
+                    <Link>Entreprepreneur Council</Link>
+                  </li>
+                  <li>
+                    <Link>Entreprepreneur Council</Link>
+                  </li>
+                  <li>
+                    <Link>Patronage Council</Link>
+                  </li>
+                  <li>
+                    <Link>Representative Council</Link>
                   </li>
                 </ul>
               </details>

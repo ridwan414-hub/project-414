@@ -48,12 +48,14 @@ const Sidebar = () => {
           {Menus.map((Menu, index) => (
             <li
               key={index}
-              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+              className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
               ${Menu.gap ? 'm-10 mt-24' : 'mt-2'} ${
                 index === 0 && 'bg-light-white'
               } `}
             >
-              <img src={`./src/assets/admin-sidebar-images/${Menu.src}.png`} />
+                <img
+                  src={`./src/assets/admin-sidebar-images/${Menu.src}.png`}
+                />
               <NavLink to={Menu.title}>
                 <span
                   className={`${!open && 'hidden'} origin-left duration-200`}
