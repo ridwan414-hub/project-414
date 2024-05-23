@@ -36,7 +36,7 @@ const Header = () => {
                 <NavLink to="/donar-list">Donar List</NavLink>
               </li>
               <li>
-                <NavLink to="/events">Events</NavLink>
+                <NavLink to={'/upcoming-events'}>Events</NavLink>
                 <ul className="p-2">
                   <li>
                     <NavLink to="/upcoming-events">Upcoming Events</NavLink>
@@ -59,7 +59,7 @@ const Header = () => {
                 <NavLink to="/blog">Blogs</NavLink>
               </li>
               <li>
-                <NavLink to="/committee">Committee</NavLink>
+                <NavLink to="/advisory-council">Committee</NavLink>
                 <ul className="p-2">
                   <li>
                     <NavLink to="/advisory-council">Advisory Council</NavLink>
@@ -97,10 +97,10 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Voice Of Muslims</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal z-10 px-1">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

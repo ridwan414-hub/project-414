@@ -1,6 +1,6 @@
 const Accordion = ({ id, text, title }) => {
   return (
-    <div tabIndex={id} className="collapse collapse-plus bg-base-200">
+    <div tabIndex={id} className="collapse collapse-plus bg-base-200 p-4 mt-2">
       <input type="checkbox" />
       <div className="collapse-title text-xl font-medium">{title}</div>
       <div className="collapse-content bg-white">{text}</div>

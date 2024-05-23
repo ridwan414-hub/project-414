@@ -26,24 +26,22 @@ const Layout = ({
       </Helmet>
       <TopBanner />
       <Header />
-      <section className="flex justify-center flex-col">
-        <div className='w-full flex flex-col items-center justify-center'>
-          <PageBanner
-            bannerTitle={bannerTitle}
-            bannerDescription={bannerDescription}
-          />
-          <main
-            className="border-2 border-gray-300 rounded-md p-4 m-4 w-full"
-            style={{
-              minHeight: '70vh',
-              backgroundColor: 'aliceblue',
-              maxWidth: '1280px',
-            }}
-          >
-            {children ? children : <Skeleton />}
-          </main>
-        </div>
-      </section>
+      <div className="w-full flex flex-col items-center">
+        <PageBanner
+          bannerTitle={bannerTitle}
+          bannerDescription={bannerDescription}
+        />
+        <main
+          className="border-2 border-gray-300 rounded-md m-4 w-full"
+          style={{
+            minHeight: '70vh',
+            backgroundColor: 'aliceblue',
+            maxWidth: '1280px',
+          }}
+        >
+          {children ? children : <Skeleton />}
+        </main>
+      </div>
       <Footer />
     </div>
   );
