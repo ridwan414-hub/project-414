@@ -2,9 +2,13 @@ import Layout from '../layouts/Layout';
 
 const ContactUs = () => {
     return (
-        <Layout title={"Contact Us"}>
-            Contact Us
-        </Layout>
+      <Layout
+        title={'Contact Us'}
+        bannerTitle={'Contact Us'}
+        bannerDescription={'Contact Us Page Description....'}
+      >
+        Contact Us
+      </Layout>
     );
 };
 
