@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { FormEndPart, SelectInput, TextNameInput } from "./Join-Form-Elements";
+import {
+  FormEndPart,
+  RadioInput,
+  SelectInput,
+  TextNameInput,
+  UploadImage,
+} from "./Join-Form-Elements";
 const JoinSection = () => {
   const [photo, setPhoto] = useState(null);
   const [document, setDocument] = useState(null);
@@ -103,120 +109,29 @@ const JoinSection = () => {
               name="blood-group"
               options={bloodOptions}
             />
+            <UploadImage
+              title=" Your photo"
+              document={photo}
+              setDocument={setPhoto}
+            />
 
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="photo"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Your photo
-              </label>
-              <input
-                type="file"
-                className="block w-full rounded-md max-w-xs border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                name="photo"
-                accept="image/*"
-                onChange={(e) => setPhoto(e.target.files[0])}
-              />
-            </div>
-            <div className="sm:col-span-3">
-              {photo && (
-                <div className="avatar">
-                  <div className="w-32 rounded">
-                    <img src={URL.createObjectURL(photo)} />
-                  </div>
-                </div>
-              )}
-            </div>
+            <TextNameInput
+              title=" Refer"
+              name="refer"
+            />
 
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="refer"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Refer
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="refer"
-                  id="refer"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-end">
-              <fieldset>
-                <label
-                  htmlFor="refer"
-                  className="block text-sm font-medium leading-6 text-gray-900"
-                >
-                  Org Relation
-                </label>
-
-                <div className="flex gap-4">
-                  <div className="pt-4">
-                    <input
-                      id="draft"
-                      className="peer/draft"
-                      type="radio"
-                      name="status"
-                      defaultChecked
-                    />
-                    <label
-                      htmlFor="draft"
-                      className="peer-checked/draft:text-sky-500"
-                    >
-                      Yes
-                    </label>
-                  </div>
-                  <div className="pt-4">
-                    <input
-                      id="published"
-                      className="peer/published"
-                      type="radio"
-                      name="status"
-                    />
-                    <label
-                      htmlFor="published"
-                      className="peer-checked/published:text-sky-500"
-                    >
-                      No
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
+            <RadioInput />
             <SelectInput
               title="Payment Gateway"
               name="payment-gateway"
               options={paymentOptions}
             />
 
-            <div className="sm:col-span-3">
-              <label
-                htmlFor="photo"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Payment Document
-              </label>
-              <input
-                type="file"
-                className="block w-full rounded-md max-w-xs border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                name="photo"
-                accept="image/*"
-                onChange={(e) => setDocument(e.target.files[0])}
-              />
-            </div>
-            <div className="sm:col-span-3">
-              {document && (
-                <div className="avatar">
-                  <div className="w-32 rounded">
-                    <img src={URL.createObjectURL(document)} />
-                  </div>
-                </div>
-              )}
-            </div>
+            <UploadImage
+              title="Payment Doc"
+              document={document}
+              setDocument={setDocument}
+            />
           </div>
         </div>
       </div>

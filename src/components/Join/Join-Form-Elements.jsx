@@ -62,3 +62,81 @@ export const FormEndPart = () => {
     </div>
   );
 };
+
+export const RadioInput = () => {
+  return (
+    <div className="sm:col-span-end">
+      <fieldset>
+        <label
+          htmlFor="refer"
+          className="block text-sm font-medium leading-6 text-gray-900"
+        >
+          Org Relation
+        </label>
+
+        <div className="flex gap-4">
+          <div className="pt-4">
+            <input
+              id="draft"
+              className="peer/draft"
+              type="radio"
+              name="status"
+              defaultChecked
+            />
+            <label
+              htmlFor="draft"
+              className="peer-checked/draft:text-sky-500"
+            >
+              Yes
+            </label>
+          </div>
+          <div className="pt-4">
+            <input
+              id="published"
+              className="peer/published"
+              type="radio"
+              name="status"
+            />
+            <label
+              htmlFor="published"
+              className="peer-checked/published:text-sky-500"
+            >
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  );
+};
+
+export const UploadImage = ({title, document, setDocument}) => {
+  return (
+    <>
+      <div className="sm:col-span-3">
+        <label
+          htmlFor="photo"
+          className="block text-sm font-medium leading-6 text-gray-900"
+        >
+          {title}
+        </label>
+        <input
+          type="file"
+          className="block w-full rounded-md max-w-xs border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          name="photo"
+          accept="image/*"
+          onChange={(e) => setDocument(e.target.files[0])}
+        />
+      </div>
+      <div className="sm:col-span-3">
+        {document && (
+          <div className="avatar">
+            <div className="w-32 rounded">
+              <img src={URL.createObjectURL(document)} />
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+  );
+};
