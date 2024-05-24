@@ -36,7 +36,7 @@ const Header = () => {
                 <NavLink to="/donar-list">Donar List</NavLink>
               </li>
               <li>
-                <NavLink to={'/upcoming-events'}>Events</NavLink>
+                <NavLink to="/upcoming-events">Events</NavLink>
                 <ul className="p-2">
                   <li>
                     <NavLink to="/upcoming-events">Upcoming Events</NavLink>
@@ -111,13 +111,22 @@ const Header = () => {
               <NavLink to="/donar-list">Donar List</NavLink>
             </li>
             <li>
-              <div className="dropdown dropdown-hover">
+              <div className="dropdown dropdown-bottom dropdown-hover">
                 <div tabIndex={0} role="button">
                   Events
                 </div>
+                <svg
+                  width="12px"
+                  height="12px"
+                  className="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2048 2048"
+                >
+                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content z-10 menu p-2 x shadow bg-base-100 rounded-box w-52"
+                  className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li>
                     <NavLink to="/upcoming-events">Upcoming Events</NavLink>
@@ -142,9 +151,23 @@ const Header = () => {
             </li>
             <div className="navbar-center hidden lg:flex">
               <li>
-                <details>
-                  <summary>Committee</summary>
-                  <ul className="p-2">
+                <div className="dropdown dropdown-bottom dropdown-hover">
+                  <div tabIndex={0} role="button">
+                    Committee
+                  </div>
+                  <svg
+                    width="12px"
+                    height="12px"
+                    className="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                  >
+                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                  </svg>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
                     <li>
                       <NavLink to="/advisory-council">Advisory Council</NavLink>
                     </li>
@@ -169,7 +192,7 @@ const Header = () => {
                       </NavLink>
                     </li>
                   </ul>
-                </details>
+                </div>
               </li>
             </div>
             <li>
