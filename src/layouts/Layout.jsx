@@ -25,11 +25,9 @@ const Layout = ({ children, description, keywords, author, title }) => {
       </Helmet>
       <Header />
       <section className="flex justify-center">
-        <main className="border-2 border-gray-300 rounded-md p-4 m-4 w-full"
+        <main className=" w-full"
           style={{
             minHeight: "70vh",
-            backgroundColor: "aliceblue",
-            maxWidth: "1280px",
           }}
         >
           {children}
