@@ -38,6 +38,7 @@ const Layout = ({
             minHeight: '70vh',
             // backgroundColor: 'aliceblue',
             maxWidth: '1280px',
+
           }}
         >
           {children ? children : <Skeleton />}
