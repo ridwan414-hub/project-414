@@ -1,29 +1,29 @@
 const HomepageCamping = () => {
   const dataCamp = [
     {
-      title: "Camping 1",
-      description: "This is the description of camping 1",
+      title: 'Camping 1',
+      description: 'This is the description of camping 1',
       raised: 1000,
       goal: 2000,
       duration: 30,
     },
     {
-      title: "Camping 1",
-      description: "This is the description of camping 1",
+      title: 'Camping 1',
+      description: 'This is the description of camping 1',
       raised: 1000,
       goal: 2000,
       duration: 30,
     },
     {
-      title: "Camping 1",
-      description: "This is the description of camping 1",
+      title: 'Camping 1',
+      description: 'This is the description of camping 1',
       raised: 1000,
       goal: 2000,
       duration: 30,
     },
     {
-      title: "Camping 1",
-      description: "This is the description of camping 1",
+      title: 'Camping 1',
+      description: 'This is the description of camping 1',
       raised: 1000,
       goal: 2000,
       duration: 30,

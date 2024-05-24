@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const HomepageJoinUs = () => {
   const navigate = useNavigate();
@@ -8,7 +8,7 @@ const HomepageJoinUs = () => {
         <p>Want to Join with us ?</p>
         <button
           className="w-fit btn px-6 py-3 rounded-md bg-red-700/80 hover:bg-red-700 text-white"
-          onClick={() => navigate("/join")}
+          onClick={() => navigate('/join')}
         >
           Join Now
         </button>

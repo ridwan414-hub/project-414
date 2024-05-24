@@ -1,5 +1,5 @@
+import BlogSection from '../components/BlogPage.jsx/BlogSection';
 import Layout from '../layouts/Layout';
-import BlogSection from './BlogPage.jsx/BlogSection';
 
 
 const Blog = () => {

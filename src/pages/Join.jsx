@@ -1,4 +1,4 @@
-import JoinSection from "../components/Join/Join-Section";
+import JoinSection from "../components/JoinPage/Join-Section";
 import Layout from "../layouts/Layout";
 
 const Join = () => {

@@ -1,5 +1,5 @@
+import DonarTable from '../components/DonarListPage/DonarTable';
 import Layout from '../layouts/Layout';
-import DonarTable from './DonarListPage/DonarTable';
 
 const DonarList = () => {
   return (
