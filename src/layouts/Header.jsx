@@ -167,10 +167,23 @@ const Header = () => {
               <NavLink to="/provincial-committee">Provincial Committee</NavLink>
             </li>
             <li>
-              <NavLink to="/join">Join</NavLink>
+              <NavLink to="/contact-us">Contact Us</NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal z-10 px-1 gap-1">
+            <li>
+              <button className="border border-violet-600">
+                <NavLink to="/join">
+                  Join
+                </NavLink>
+              </button>
             </li>
             <li>
-              <NavLink to="/login">Login</NavLink>
+              <button className="border border-red-600">
+                <NavLink to="/login">Login</NavLink>
+              </button>
             </li>
           </ul>
         </div>

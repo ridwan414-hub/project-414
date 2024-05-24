@@ -7,7 +7,7 @@ const ProvincialCommittee = () => {
       bannerTitle={'Provincial Commiittee'}
       bannerDescription={'Provincial Commiittee Page Description....'}
     >
-      ProvincialCommittee
+      
     </Layout>
   );
 };

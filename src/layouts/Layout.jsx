@@ -8,6 +8,7 @@ import PageBanner from './PageBanner';
 
 const Layout = ({
   children,
+  option=true,
   description,
   keywords,
   author,
@@ -27,15 +28,15 @@ const Layout = ({
       <TopBanner />
       <Header />
       <div className="w-full flex flex-col items-center">
-        <PageBanner
+       {option&& <PageBanner
           bannerTitle={bannerTitle}
           bannerDescription={bannerDescription}
-        />
+        />}
         <main
-          className="border-2 border-gray-300 rounded-md m-4 w-full"
+          className="m-4 w-full"
           style={{
             minHeight: '70vh',
-            backgroundColor: 'aliceblue',
+            // backgroundColor: 'aliceblue',
             maxWidth: '1280px',
           }}
         >

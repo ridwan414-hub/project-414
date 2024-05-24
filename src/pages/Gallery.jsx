@@ -1,4 +1,5 @@
 import Layout from '../layouts/Layout';
+import GalleryCarosel from './Gallerypage/GalleryCarosel';
 
 const Gallery = () => {
     return (
@@ -7,7 +8,7 @@ const Gallery = () => {
         bannerTitle={'Gallery'}
         bannerDescription={'Gallery Page Description....'}
       >
-        Gallery
+        <GalleryCarosel/>
       </Layout>
     );
 };

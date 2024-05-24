@@ -7,7 +7,6 @@ const ContactUs = () => {
         bannerTitle={'Contact Us'}
         bannerDescription={'Contact Us Page Description....'}
       >
-        Contact Us
       </Layout>
     );
 };
