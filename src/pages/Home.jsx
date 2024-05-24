@@ -13,8 +13,8 @@ const Home = () => {
       }
     >
       <HomepageIntro />
-      <HomePageCountSection />
       <HomepageCamping />
+      <HomePageCountSection />
       <HomepageJoinUs />
     </Layout>
   );

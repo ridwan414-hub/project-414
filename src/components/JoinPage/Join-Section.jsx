@@ -1,25 +1,56 @@
-import { useState } from "react";
+import { useEffect, useState } from 'react';
 import {
   FormEndPart,
-  RadioInput,
   SelectInput,
   TextNameInput,
   UploadImage,
-} from "./Join-Form-Elements";
+} from './Join-Form-Elements';
+import axios from 'axios';
 const JoinSection = () => {
-  const [photo, setPhoto] = useState(null);
+  const [countryInputValue, setCountryInputValue] = useState('');
+  const [country, setCountry] = useState('');
+  const [countries, setCountries] = useState([]);
+  const [countryId, setCountryId] = useState([]);
+
+  
+  
+  const getAllCountries = async () => {
+    var headers = new Headers();
+    headers.append(
+      'X-CSCAPI-KEY',
+      'M3pETHI0bkUxNjF1VHVxV0VyZ2J4cFBxVW1tTHZyYXpZam9EbVh0RA=='
+    );
+  
+    var requestOptions = {
+      method: 'GET',
+      headers: headers,
+      redirect: 'follow',
+    };
+   try {
+     const { data } = await axios.get(
+       'https://api.countrystatecity.in/v1/countries',
+       requestOptions
+     );
+     setCountries(data);
+   } catch (error) {
+    console.log(error);
+   }
+  };
+  useEffect(() => {
+    getAllCountries();
+  }, []);
+
+  const handleCountryInput = (e) => {
+    e.preventDefault();
+    setCountry(e.target.value);
+    setCountryInputValue(e.target.value);
+  };
+// const filterCountries = countries.filter((d) =>
+//   d.name.toLowerCase().includes(countryInputValue.toLowerCase())
+// );
+
   const [document, setDocument] = useState(null);
-  const maritalOptions = ["Married", "Unmarried"];
-  const bloodOptions = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
-  const upazillaOptions = [
-    "Upazilla 1",
-    "Upazilla 2",
-    "Upazilla 3",
-    "Upazilla 4",
-    "Upazilla 5",
-  ];
-  const unionOptions = ["Union 1", "Union 2", "Union 3", "Union 4", "Union 5"];
-  const paymentOptions = ["Bkash", "Rocket", "Nagad", "Paypal", "Bank"];
+  const unionOptions = ['Union 1', 'Union 2', 'Union 3', 'Union 4', 'Union 5'];
   return (
     <section className="flex justify-center">
       <form className="w-full p-12 max-w-7xl">
@@ -32,101 +63,34 @@ const JoinSection = () => {
               Use a permanent address where you can receive mail.
             </p>
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-              <TextNameInput
-                title="First Name"
-                name="first-name"
-              />
-              <TextNameInput
-                title="Last Name"
-                name="last-name"
-              />
-              <TextNameInput
-                title="Mobile No(BD)"
-                name="mobile-no-bd"
-              />
-              <TextNameInput
-                title=" Father's name"
-                name="father's-name"
-              />
-              <TextNameInput
-                title=" Mother's name"
-                name="mother's-name"
-              />
+              <TextNameInput title="First Name" name="first-name" />
+              <TextNameInput title="Last Name" name="last-name" />
+              <TextNameInput title="Mobile No (Optional)" name="mobile-no-bd" />
+              <TextNameInput title=" Refer" name="refer" />
               <TextNameInput
                 title="NID or Passport"
                 name="nid-or-passport"
+                className="sm:col-span-full"
               />
 
-              <SelectInput
-                title="Upazilla"
-                name="upazilla"
-                options={upazillaOptions}
-              />
               <SelectInput
                 title="Union"
                 name="union"
                 options={unionOptions}
+                value={country}
+                onChange={handleCountryInput}
               />
+              <SelectInput title="Union" name="union" options={unionOptions} />
+              <SelectInput title="Union" name="union" options={unionOptions} />
 
-              <TextNameInput
-                name="permanent-address"
-                title="Permanent address"
-                className="sm:col-span-full"
-              />
-              <TextNameInput
-                title="Ksa State"
-                name="ksa-state"
-              />
-              <TextNameInput
-                title="Present Address"
-                name="present-address"
-              />
-              <TextNameInput
-                title="Email"
-                name="email"
-                type="email"
-              />
-              <TextNameInput
-                title="Password"
-                name="password"
-                type="password"
-              />
+              <TextNameInput title="Street" name="street" />
+              <TextNameInput title="Email" name="email" type="email" />
               <TextNameInput
                 title="Date Of Birth"
                 name="date-of-birth"
                 type="date"
               />
-              <TextNameInput
-                title="Occupation"
-                name="occupation"
-              />
-              <SelectInput
-                title="Marital Status"
-                name="marital-status"
-                options={maritalOptions}
-              />
-              <SelectInput
-                title="Blood Group"
-                name="blood-group"
-                options={bloodOptions}
-              />
-              <UploadImage
-                title=" Your photo"
-                document={photo}
-                setDocument={setPhoto}
-              />
-
-              <TextNameInput
-                title=" Refer"
-                name="refer"
-              />
-
-              <RadioInput />
-              <SelectInput
-                title="Payment Gateway"
-                name="payment-gateway"
-                options={paymentOptions}
-              />
+              <TextNameInput title="Password" name="password" type="password" />
 
               <UploadImage
                 title="Payment Doc"

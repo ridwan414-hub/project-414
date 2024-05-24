@@ -100,7 +100,7 @@ const Header = () => {
           <a className="btn btn-ghost text-xl">Voice Of Muslims</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal z-10 px-1">
+          <ul className="menu menu-horizontal z-10 ">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -111,9 +111,14 @@ const Header = () => {
               <NavLink to="/donar-list">Donar List</NavLink>
             </li>
             <li>
-              <details>
-                <summary>Events</summary>
-                <ul className="p-2">
+              <div className="dropdown dropdown-hover">
+                <div tabIndex={0} role="button">
+                  Events
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-10 menu p-2 x shadow bg-base-100 rounded-box w-52"
+                >
                   <li>
                     <NavLink to="/upcoming-events">Upcoming Events</NavLink>
                   </li>
@@ -127,7 +132,7 @@ const Header = () => {
                     <NavLink to="/completed-events">Completed Events</NavLink>
                   </li>
                 </ul>
-              </details>
+              </div>
             </li>
             <li>
               <NavLink to="/gallery">Gallery</NavLink>
@@ -135,34 +140,38 @@ const Header = () => {
             <li>
               <NavLink to="/blog">Blogs</NavLink>
             </li>
-            <li>
-              <details>
-                <summary>Committee</summary>
-                <ul className="p-2">
-                  <li>
-                    <NavLink to="/advisory-council">Advisory Council</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/board-of-directors">
-                      Board of Directors
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/entrepreneur-council">
-                      Entrepreneur Council
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/patronage-council">Patronage Council</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/representative-council">
-                      Representative Council
-                    </NavLink>
-                  </li>
-                </ul>
-              </details>
-            </li>
+            <div className="navbar-center hidden lg:flex">
+              <li>
+                <details>
+                  <summary>Committee</summary>
+                  <ul className="p-2">
+                    <li>
+                      <NavLink to="/advisory-council">Advisory Council</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/board-of-directors">
+                        Board of Directors
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/entrepreneur-council">
+                        Entrepreneur Council
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/patronage-council">
+                        Patronage Council
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/representative-council">
+                        Representative Council
+                      </NavLink>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </div>
             <li>
               <NavLink to="/provincial-committee">Provincial Committee</NavLink>
             </li>
@@ -175,9 +184,7 @@ const Header = () => {
           <ul className="menu menu-horizontal z-10 px-1 gap-1">
             <li>
               <button className="border border-violet-600">
-                <NavLink to="/join">
-                  Join
-                </NavLink>
+                <NavLink to="/join">Join</NavLink>
               </button>
             </li>
             <li>

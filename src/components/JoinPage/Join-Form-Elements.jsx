@@ -1,4 +1,4 @@
-export const TextNameInput = ({ title, name, className, type = "text" }) => {
+export const TextNameInput = ({ title, name, className, type = 'text' }) => {
   return (
     <div className={`sm:col-span-3 ${className}`}>
       <label
@@ -27,6 +27,21 @@ export const SelectInput = ({ title, name, className, options }) => {
         className="block text-sm font-medium leading-6 text-gray-900"
       >
         {title}
+      </label>
+      <label className="input input-bordered flex items-center gap-2">
+        <select type="text" className="grow" placeholder="Search" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          className="w-4 h-4 opacity-70"
+        >
+          <path
+            fillRule="evenodd"
+            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+            clipRule="evenodd"
+          />
+        </svg>
       </label>
       <div className="mt-2">
         <select
@@ -63,54 +78,7 @@ export const FormEndPart = () => {
   );
 };
 
-export const RadioInput = () => {
-  return (
-    <div className="sm:col-span-end">
-      <fieldset>
-        <label
-          htmlFor="refer"
-          className="block text-sm font-medium leading-6 text-gray-900"
-        >
-          Org Relation
-        </label>
-
-        <div className="flex gap-4">
-          <div className="pt-4">
-            <input
-              id="draft"
-              className="peer/draft"
-              type="radio"
-              name="status"
-              defaultChecked
-            />
-            <label
-              htmlFor="draft"
-              className="peer-checked/draft:text-sky-500"
-            >
-              Yes
-            </label>
-          </div>
-          <div className="pt-4">
-            <input
-              id="published"
-              className="peer/published"
-              type="radio"
-              name="status"
-            />
-            <label
-              htmlFor="published"
-              className="peer-checked/published:text-sky-500"
-            >
-              No
-            </label>
-          </div>
-        </div>
-      </fieldset>
-    </div>
-  );
-};
-
-export const UploadImage = ({title, document, setDocument}) => {
+export const UploadImage = ({ title, setDocument }) => {
   return (
     <>
       <div className="sm:col-span-3">
@@ -128,15 +96,55 @@ export const UploadImage = ({title, document, setDocument}) => {
           onChange={(e) => setDocument(e.target.files[0])}
         />
       </div>
-      <div className="sm:col-span-3">
-        {document && (
-          <div className="avatar">
-            <div className="w-32 rounded">
-              <img src={URL.createObjectURL(document)} />
-            </div>
-          </div>
-        )}
-      </div>
     </>
   );
 };
+
+// export const RadioInput = () => {
+//   return (
+//     <div className="sm:col-span-end">
+//       <fieldset>
+//         <label
+//           htmlFor="refer"
+//           className="block text-sm font-medium leading-6 text-gray-900"
+//         >
+//           Org Relation
+//         </label>
+
+//         <div className="flex gap-4">
+//           <div className="pt-4">
+//             <input
+//               id="draft"
+//               className="peer/draft"
+//               type="radio"
+//               name="status"
+//               defaultChecked
+//             />
+//             <label htmlFor="draft" className="peer-checked/draft:text-sky-500">
+//               Yes
+//             </label>
+//           </div>
+//           <div className="pt-4">
+//             <input
+//               id="published"
+//               className="peer/published"
+//               type="radio"
+//               name="status"
+//             />
+//             <label
+//               htmlFor="published"
+//               className="peer-checked/published:text-sky-500"
+//             >
+//               No
+//             </label>
+//           </div>
+//         </div>
+//       </fieldset>
+//     </div>
+//   );
+// };
+
+<label className="input input-bordered flex items-center gap-2">
+  <input type="text" className="grow" placeholder="Search" />
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
+</label>

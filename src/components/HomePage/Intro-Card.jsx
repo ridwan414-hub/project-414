@@ -7,7 +7,7 @@ const IntroCard = ({ data }) => {
       <h2 onClick={() => setModal(true)} className="cursor-pointer text-2xl">
         {data?.title}
       </h2>
-      {modal && (
+      {!modal && (
         <dialog role="modal" className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-lg">Hello!</h3>
