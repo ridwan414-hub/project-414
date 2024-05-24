@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -6,11 +6,7 @@ const Header = () => {
       <div className="max-w-[1280px] w-full flex justify-between">
         <div className="navbar-start w-fit">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -40,7 +36,53 @@ const Header = () => {
                 <NavLink to="/donar-list">Donar List</NavLink>
               </li>
               <li>
-                <NavLink to="/committee">Committee</NavLink>
+                <NavLink to={'/upcoming-events'}>Events</NavLink>
+                <ul className="p-2">
+                  <li>
+                    <NavLink to="/upcoming-events">Upcoming Events</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/yearly-events">Yearly Events</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/permanent-events">Permanent Events</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/completed-events">Completed Events</NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <NavLink to="/gallery">Gallery</NavLink>
+              </li>
+              <li>
+                <NavLink to="/blog">Blogs</NavLink>
+              </li>
+              <li>
+                <NavLink to="/advisory-council">Committee</NavLink>
+                <ul className="p-2">
+                  <li>
+                    <NavLink to="/advisory-council">Advisory Council</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/board-of-directors">
+                      Board of Directors
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/entrepreneur-council">
+                      Entrepreneur Council
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/patronage-council">Patronage Council</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/representative-council">
+                      Representative Council
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li>
                 <NavLink to="/provincial-committee">
@@ -48,31 +90,17 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/gallery">Gallery</NavLink>
-              </li>
-              <li>
                 <NavLink to="/join">Join</NavLink>
               </li>
               <li>
                 <NavLink to="/login">Login</NavLink>
               </li>
-              <li>
-                <NavLink to="/committee">Committee</NavLink>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Voice Of Muslims</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal z-10 px-1">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -83,17 +111,54 @@ const Header = () => {
               <NavLink to="/donar-list">Donar List</NavLink>
             </li>
             <li>
-              <NavLink to="/committee">Committee</NavLink>
+              <details>
+                <summary>Events</summary>
+                <ul className="p-2">
+                  <li>
+                    <NavLink to="/upcoming-events">Upcoming Events</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/yearly-events">Yearly Events</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/permanent-events">Permanent Events</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/completed-events">Completed Events</NavLink>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog">Blogs</NavLink>
             </li>
             <li>
               <details>
                 <summary>Committee</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <NavLink to="/advisory-council">Advisory Council</NavLink>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <NavLink to="/board-of-directors">
+                      Board of Directors
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/entrepreneur-council">
+                      Entrepreneur Council
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/patronage-council">Patronage Council</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/representative-council">
+                      Representative Council
+                    </NavLink>
                   </li>
                 </ul>
               </details>
@@ -101,16 +166,24 @@ const Header = () => {
             <li>
               <NavLink to="/provincial-committee">Provincial Committee</NavLink>
             </li>
-
             <li>
-              <NavLink to="/events">Events</NavLink>
+              <NavLink to="/contact-us">Contact Us</NavLink>
             </li>
-
+          </ul>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal z-10 px-1 gap-1">
             <li>
-              <NavLink to="/join">Join</NavLink>
+              <button className="border border-violet-600">
+                <NavLink to="/join">
+                  Join
+                </NavLink>
+              </button>
             </li>
             <li>
-              <NavLink to="/login">Login</NavLink>
+              <button className="border border-red-600">
+                <NavLink to="/login">Login</NavLink>
+              </button>
             </li>
           </ul>
         </div>
