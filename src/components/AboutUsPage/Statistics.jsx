@@ -8,9 +8,9 @@ const stats = [
 ];
 const Statistics = () => {
   return (
-    <div className="bg-gradient-to-r from-cyan-50 to-blue-50 py-24 sm:py-32">
+    <div className="bg-gradient-to-r from-cyan-50 to-blue-50 py-24 sm:py-32 flex w-full">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat) => (
             <div
               key={stat.id}
@@ -24,7 +24,7 @@ const Statistics = () => {
               </dd>
             </div>
           ))}
-        </dl>
+        </div>
       </div>
     </div>
   );
