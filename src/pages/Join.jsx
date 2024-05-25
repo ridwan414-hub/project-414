@@ -6,7 +6,9 @@ const Join = () => {
     <Layout
       title={'Join us'}
       bannerTitle={'Join Us'}
-      bannerDescription={'Join Us Page Description....'}
+      bannerDescription={
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo officia obcaecati debitis vero perspiciatis cumque, expedita doloribus quam ab!'
+      }
     >
       <JoinSection />
     </Layout>
