@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import ProvincialCommittee from './pages/ProvincialCommittee';
 import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
 import Members from './pages/Members';
@@ -32,6 +31,7 @@ import BoardOfDirectors from './pages/CommitteePages/BoardOfDirectors';
 import EntrepreneurCouncil from './pages/CommitteePages/EntrepreneurCouncil';
 import PatronageCouncil from './pages/CommitteePages/PatronageCouncil';
 import RepresentativeCouncil from './pages/CommitteePages/RepresentativeCouncil';
+import ProvincialCommittee from './pages/CommitteePages/ProvincialCommittee';
 
 function App() {
   return (

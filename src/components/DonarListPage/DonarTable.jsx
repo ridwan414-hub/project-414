@@ -1,6 +1,16 @@
 const DonarTable = () => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto px-36">
+      <div className="text-center py-16">
+        <h1 className="text-5xl py-2">
+          <span className="text-red-500">Peoples</span> who has{' '}
+          <span className="text-green-500">donated</span> till last month
+        </h1>
+        <p className="text-lg">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+          unde ex eveniet
+        </p>
+      </div>
       <table className="table table-xs">
         <thead>
           <tr>

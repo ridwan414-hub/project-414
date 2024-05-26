@@ -2,13 +2,10 @@ const stats = [
   { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
   { id: 2, name: 'Assets under holding', value: '$119 trillion' },
   { id: 3, name: 'New users annually', value: '46,000' },
-  { id: 3, name: 'Events', value: '157' },
-  { id: 3, name: 'Members', value: '1330' },
-  { id: 3, name: 'Successful Missions', value: '46' },
 ];
-const Statistics = () => {
+const HomepageStatisticsSection = () => {
   return (
-    <div className="bg-gradient-to-r from-cyan-50 to-blue-50 py-24 sm:py-32 flex w-full">
+    <div className="bg-gradient-to-r py-24 sm:py-32 flex w-full">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat) => (
@@ -30,4 +27,4 @@ const Statistics = () => {
   );
 };
 
-export default Statistics;
+export default HomepageStatisticsSection;

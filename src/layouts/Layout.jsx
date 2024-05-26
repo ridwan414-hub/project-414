@@ -37,7 +37,7 @@ const Layout = ({
           style={{
             minHeight: '70vh',
             // backgroundColor: 'aliceblue',
-            // maxWidth: '1280px',
+            // maxWidth: '1440px',
 
           }}
         >

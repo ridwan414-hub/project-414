@@ -9,7 +9,7 @@ const FindLocationSection = () => {
       <div style={{ width: "100%" }}>
         <iframe
           width="100%"
-          height={600}
+          height={460}
           src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=106/A,Babunagar,Feni%20,%20Bangladesh+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
         >
           <Link to="https://www.gps.ie/">gps devices</Link>;

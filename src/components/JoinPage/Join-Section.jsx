@@ -142,16 +142,17 @@ const JoinSection = () => {
               />
 
               <TextNameInput title="Street" name="street" />
+              <TextNameInput title="Create User Name" name="user-name" />
               <TextNameInput title="Email" name="email" type="email" />
               <TextNameInput
                 title="Date Of Birth"
                 name="date-of-birth"
                 type="date"
               />
-              <TextNameInput title="Password" name="password" type="password" />
+              <TextNameInput title="Create Password" name="password" type="password" />
 
               <UploadImage
-                title="Payment Doc"
+                title="Your Photo"
                 document={document}
                 setDocument={setDocument}
               />

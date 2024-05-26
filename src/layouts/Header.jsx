@@ -62,6 +62,11 @@ const Header = () => {
                 <NavLink to="/advisory-council">Committee</NavLink>
                 <ul className="p-2">
                   <li>
+                    <NavLink to="/provincial-committee">
+                      Provincial Committee
+                    </NavLink>
+                  </li>
+                  <li>
                     <NavLink to="/advisory-council">Advisory Council</NavLink>
                   </li>
                   <li>
@@ -85,11 +90,6 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <NavLink to="/provincial-committee">
-                  Provincial Committee
-                </NavLink>
-              </li>
-              <li>
                 <NavLink to="/join">Join</NavLink>
               </li>
               <li>
@@ -97,7 +97,16 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Voice Of Muslims</a>
+
+          <div className="flex -mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
+            <img
+              className="w-12 h-12 mt-2 sm:w-16 sm:h-16 rounded-full "
+              src="https://voiceofmuslims.org/upload/images/logo/aQpoQRYTWfFifqO3CKmlZAcgK8XwfASxLabL7CQ2.png"
+              alt="Your Company"
+            />
+          <a className="btn mt-4 btn-ghost text-xl">Voice Of Muslims</a>
+          </div>
+
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal z-10 ">
@@ -169,6 +178,11 @@ const Header = () => {
                     className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
                     <li>
+                      <NavLink to="/provincial-committee">
+                        Provincial Committee
+                      </NavLink>
+                    </li>
+                    <li>
                       <NavLink to="/advisory-council">Advisory Council</NavLink>
                     </li>
                     <li>
@@ -195,9 +209,6 @@ const Header = () => {
                 </div>
               </li>
             </div>
-            <li>
-              <NavLink to="/provincial-committee">Provincial Committee</NavLink>
-            </li>
             <li>
               <NavLink to="/contact-us">Contact Us</NavLink>
             </li>

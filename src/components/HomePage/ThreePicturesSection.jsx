@@ -6,9 +6,9 @@ const ThreePicturesSection = () => {
           <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
             Beach House in Collingwood
           </h1>
-          <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house
-          </p>
+          <h1 className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
+            Voice of Muslims 
+          </h1>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
@@ -76,7 +76,7 @@ const ThreePicturesSection = () => {
               <path d="M18 11.034C18 14.897 12 19 12 19s-6-4.103-6-7.966C6 7.655 8.819 5 12 5s6 2.655 6 6.034Z" />
               <path d="M14 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
             </svg>
-            Collingwood, Ontario
+            Dhaka,Bangladesh
           </dd>
         </dl>
         <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
@@ -84,7 +84,7 @@ const ThreePicturesSection = () => {
             type="button"
             className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
           >
-            Check availability
+            BE PART OF IT
           </button>
         </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">

@@ -5,6 +5,7 @@ import HomepageCamping from '../components/HomePage/Homepage-Camping';
 import HomepageJoinUs from '../components/HomePage/Homepage-Join-Us';
 import FivePicturesSection from '../components/HomePage/FivePicturesSection';
 import ThreePicturesSection from '../components/HomePage/ThreePicturesSection';
+import HomepageTestimonialsSection from '../components/HomePage/HomepageTestimonialsSection';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <HomepageCamping />
       <HomePageCountSection />
       <HomepageJoinUs />
+      <HomepageTestimonialsSection />
     </Layout>
   );
 };
