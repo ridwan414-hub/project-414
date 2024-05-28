@@ -39,7 +39,7 @@ const HomepageCamping = () => {
           {dataCamp?.map((camp, index) => (
             <div
               key={index}
-              className="border-4 border-red-700/70 p-2.5 rounded-lg"
+              className="border-x-2 border-red-600 text-center p-2.5 rounded-lg hover:bg-red-500 hover:text-white"
             >
               <img
                 className="w-fit object-cover"
