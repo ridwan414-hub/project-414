@@ -43,29 +43,6 @@ const Header = () => {
                 <NavLink to="/donar-list">Donar List</NavLink>
               </li>
               <li>
-                <NavLink to="/upcoming-events">Events</NavLink>
-                <ul className="p-2">
-                  <li>
-                    <NavLink to="/upcoming-events">Upcoming Events</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/yearly-events">Yearly Events</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/permanent-events">Permanent Events</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/completed-events">Completed Events</NavLink>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <NavLink to="/gallery">Gallery</NavLink>
-              </li>
-              <li>
-                <NavLink to="/blog">Blogs</NavLink>
-              </li>
-              <li>
                 <NavLink to="/advisory-council">Committee</NavLink>
                 <ul className="p-2">
                   <li>
@@ -97,6 +74,18 @@ const Header = () => {
                 </ul>
               </li>
               <li>
+                <NavLink to="/events">Events</NavLink>
+              </li>
+              <li>
+                <NavLink to="/gallery">Gallery</NavLink>
+              </li>
+              <li>
+                <NavLink to="/blog">Blogs</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact-us">Contact Us</NavLink>
+              </li>
+              <li>
                 <NavLink to="/join">Join</NavLink>
               </li>
               <li>
@@ -113,7 +102,7 @@ const Header = () => {
               alt="Your Company"
             />
             <a className="btn mt-4 btn-ghost text-xl">
-             {/* {site_name} */}
+              {/* {site_name} */}
               Voice Of Muslims
             </a>
           </div>
@@ -128,45 +117,6 @@ const Header = () => {
             </li>
             <li>
               <NavLink to="/donar-list">Donar List</NavLink>
-            </li>
-            <li>
-              <div className="dropdown dropdown-bottom dropdown-hover">
-                <div tabIndex={0} role="button">
-                  Events
-                </div>
-                <svg
-                  width="12px"
-                  height="12px"
-                  className="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 2048 2048"
-                >
-                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                </svg>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li>
-                    <NavLink to="/upcoming-events">Upcoming Events</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/yearly-events">Yearly Events</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/permanent-events">Permanent Events</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/completed-events">Completed Events</NavLink>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <NavLink to="/gallery">Gallery</NavLink>
-            </li>
-            <li>
-              <NavLink to="/blog">Blogs</NavLink>
             </li>
             <div className="navbar-center hidden lg:flex">
               <li>
@@ -219,6 +169,15 @@ const Header = () => {
                 </div>
               </li>
             </div>
+            <li>
+              <NavLink to="/events">Events</NavLink>
+            </li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog">Blogs</NavLink>
+            </li>
             <li>
               <NavLink to="/contact-us">Contact Us</NavLink>
             </li>

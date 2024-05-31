@@ -35,7 +35,7 @@ const PageBanner = ({ bannerTitle, bannerDescription }) => {
           <h2 className="text-4xl font-bold tracking-tight text-center text-white sm:text-6xl">
             {bannerTitle ? bannerTitle : 'Work with us'}
           </h2>
-          <p className="mt-6 text-lg leading-8 text-center text-balance text-gray-300">
+          <p className="mt-6 text-2xl leading-8 text-center text-balance text-gray-300">
             {bannerDescription
               ? bannerDescription
               : 'Anim aute id magna aliqua ad ad non deserunt sunt'}

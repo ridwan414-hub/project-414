@@ -6,7 +6,7 @@ const ContactUs = () => {
       <Layout
         title={'Contact Us'}
         bannerTitle={'Contact Us'}
-        bannerDescription={'Contact Us Page Description....'}
+        bannerDescription={'We value your feedback and are here to assist you.'}
       >
         <ContactUsSection />
       </Layout>

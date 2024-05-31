@@ -12,10 +12,10 @@ const Home = () => {
     <Layout
       bannerTitle={'Welcome to Our Website!'}
       bannerDescription={
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo officia obcaecati debitis vero perspiciatis cumque, expedita doloribus quam ab!'
+        'Our organization relies on the generosity of donors and volunteers who share our vision of a better, more equitable world.'
       }
     >
-      <ThreePicturesSection/>
+      <ThreePicturesSection />
       <FivePicturesSection />
       <HomepageIntro />
       <HomepageCamping />
