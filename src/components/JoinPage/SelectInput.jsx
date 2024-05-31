@@ -34,6 +34,7 @@ export const SelectInput = ({
           id={name}
           name={name}
           placeholder="Search"
+          required
           className="input block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
           value={data}
           onChange={handleInputField}
@@ -63,7 +64,7 @@ export const SelectInput = ({
               ))
             ) : (
               <li className="w-full">
-                <button className="text-center">No {name} found</button>
+                <button className="text-center">Fill up with your {name} name</button>
               </li>
             )}
           </ul>

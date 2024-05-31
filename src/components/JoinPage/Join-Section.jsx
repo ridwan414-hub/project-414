@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
-import {
-  FormEndPart,
-  TextNameInput,
-  UploadImage,
-} from './Join-Form-Elements';
+import { FormEndPart, TextNameInput } from './Join-Form-Elements';
 import axios from 'axios';
 import { SelectInput } from './SelectInput';
+import DateInput from './DateInput';
+import { useNavigate } from 'react-router-dom';
 const JoinSection = () => {
+  const navigate = useNavigate();
   const [countryIso2, setCountryIso2] = useState('');
-
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState('');
   const [states, setStates] = useState([]);
@@ -91,10 +89,9 @@ const JoinSection = () => {
     getAllCountries();
   }, []);
 
-  const [document, setDocument] = useState(null);
   return (
-    <section className="flex justify-center">
-      <form className="w-full p-12 max-w-7xl">
+    <section className="flex justify-center bg-pink-50 mx-12 rounded-xl shadow-2xl">
+      <form className="w-full p-12 max-w-7xl" onSubmit={()=>navigate('/login')}>
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base text-center font-semibold leading-7 text-gray-900">
@@ -108,10 +105,15 @@ const JoinSection = () => {
               <TextNameInput title="Last Name" name="last-name" />
               <TextNameInput title="Mobile No (Optional)" name="mobile-no-bd" />
               <TextNameInput title=" Refer" name="refer" />
+              <DateInput
+                title="Date Of Birth"
+                name="date-of-birth"
+                type="date"
+              />
               <TextNameInput
                 title="NID or Passport"
                 name="nid-or-passport"
-                className="sm:col-span-full"
+                className="sm:col-span-2"
               />
 
               <SelectInput
@@ -144,17 +146,11 @@ const JoinSection = () => {
               <TextNameInput title="Street" name="street" />
               <TextNameInput title="Create User Name" name="user-name" />
               <TextNameInput title="Email" name="email" type="email" />
-              <TextNameInput
-                title="Date Of Birth"
-                name="date-of-birth"
-                type="date"
-              />
-              <TextNameInput title="Create Password" name="password" type="password" />
 
-              <UploadImage
-                title="Your Photo"
-                document={document}
-                setDocument={setDocument}
+              <TextNameInput
+                title="Create Password"
+                name="password"
+                type="password"
               />
             </div>
           </div>

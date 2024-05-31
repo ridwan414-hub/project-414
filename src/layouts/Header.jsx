@@ -1,12 +1,19 @@
 import { NavLink } from 'react-router-dom';
+// import { useWebsiteInfo } from '../contexts/WebsiteInfo';
 
 const Header = () => {
+  // const [WebsiteInfo] = useWebsiteInfo()
+  // const { site_name,site_logo } = WebsiteInfo
   return (
-    <div className="navbar bg-base-100 flex justify-center">
+    <div className="navbar bg-base-100 flex justify-center ">
       <div className="max-w-[1280px] w-full flex justify-between">
         <div className="navbar-start w-fit">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden "
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -98,15 +105,18 @@ const Header = () => {
             </ul>
           </div>
 
-          <div className="flex -mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
+          <div className="flex lg:-mt-8 sm:mx-auto sm:w-full sm:max-w-sm sm:px-auto sm:-mt-2">
             <img
-              className="w-12 h-12 mt-2 sm:w-16 sm:h-16 rounded-full "
+              className="w-12 h-12 mt-2 sm:w-16 sm:h-16 sm:mx-auto rounded-full"
+              // src={site_logo}
               src="https://voiceofmuslims.org/upload/images/logo/aQpoQRYTWfFifqO3CKmlZAcgK8XwfASxLabL7CQ2.png"
               alt="Your Company"
             />
-          <a className="btn mt-4 btn-ghost text-xl">Voice Of Muslims</a>
+            <a className="btn mt-4 btn-ghost text-xl">
+             {/* {site_name} */}
+              Voice Of Muslims
+            </a>
           </div>
-
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal z-10 ">
