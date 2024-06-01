@@ -7,7 +7,7 @@ const Join = () => {
       title={'Join us'}
       bannerTitle={'Join Us'}
       bannerDescription={
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo officia obcaecati debitis vero perspiciatis cumque, expedita doloribus quam ab!'
+        'Join us to get access to all the features of our platform!'
       }
     >
       <JoinSection />

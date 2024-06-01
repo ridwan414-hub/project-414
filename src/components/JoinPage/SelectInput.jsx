@@ -64,7 +64,10 @@ export const SelectInput = ({
               ))
             ) : (
               <li className="w-full">
-                <button className="text-center">Fill up with your {name} name</button>
+                <button className="text-center">
+                  Input your &apos;non-listed&apos; {name} name then fill up
+                  the rest of the fields
+                </button>
               </li>
             )}
           </ul>

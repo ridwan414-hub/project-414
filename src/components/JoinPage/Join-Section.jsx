@@ -91,7 +91,7 @@ const JoinSection = () => {
 
   return (
     <section className="flex justify-center bg-pink-50 mx-12 rounded-xl shadow-2xl">
-      <form className="w-full p-12 max-w-7xl" onSubmit={()=>navigate('/login')}>
+      <form className="w-full p-12 max-w-7xl" onSubmit={()=>navigate('/')}>
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-base text-center font-semibold leading-7 text-gray-900">
