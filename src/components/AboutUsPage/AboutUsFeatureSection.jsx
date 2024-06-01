@@ -1,52 +1,52 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  UsersIcon,
+  AcademicCapIcon,
+  HeartIcon,
+  GlobeAltIcon,
 } from '@heroicons/react/24/outline';
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Community Outreach',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+      'We are dedicated to extending our reach to underserved communities, providing essential services and support to improve their quality of life. Our initiatives focus on education, healthcare, and social welfare, ensuring that everyone has access to the resources they need.',
+    icon: UsersIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Educational Programs',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+      'Our educational programs aim to empower individuals through knowledge and skills development. From literacy campaigns to vocational training, we strive to create opportunities for lifelong learning and personal growth.',
+    icon: AcademicCapIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Health and Wellness',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+      'We promote health and wellness through various initiatives, including medical camps, mental health support, and nutrition programs. Our goal is to ensure that every individual has the opportunity to lead a healthy and fulfilling life.',
+    icon: HeartIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Cultural Exchange',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+      'Our cultural exchange programs foster mutual understanding and respect among diverse communities. By promoting dialogue and collaboration, we aim to build a more inclusive and harmonious world.',
+    icon: GlobeAltIcon,
   },
 ];
 
-const AboutUsFeatureSection = () =>{
+const AboutUsFeatureSection = () => {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
+          <h2 className="text-5xl py-6 font-semibold leading-7 text-indigo-600">
+            Our Missions and Initiatives
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Making a Difference in the Community
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Our initiatives are designed to uplift and support individuals and
+            communities. We believe in the power of education, health, and
+            cultural understanding to create a better world for everyone.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -72,6 +72,6 @@ const AboutUsFeatureSection = () =>{
       </div>
     </div>
   );
-}
+};
 
 export default AboutUsFeatureSection;

@@ -5,7 +5,7 @@ const Header = () => {
   // const [WebsiteInfo] = useWebsiteInfo()
   // const { site_name,site_logo } = WebsiteInfo
   return (
-    <div className="navbar bg-base-100 flex justify-center ">
+    <div className="navbar bg-base-100 flex justify-center shadow-lg ">
       <div className="max-w-[1280px] w-full flex justify-between">
         <div className="navbar-start w-fit">
           <div className="dropdown">
@@ -45,11 +45,6 @@ const Header = () => {
               <li>
                 <NavLink to="/advisory-council">Committee</NavLink>
                 <ul className="p-2">
-                  <li>
-                    <NavLink to="/provincial-committee">
-                      Provincial Committee
-                    </NavLink>
-                  </li>
                   <li>
                     <NavLink to="/advisory-council">Advisory Council</NavLink>
                   </li>
@@ -137,11 +132,6 @@ const Header = () => {
                     tabIndex={0}
                     className="dropdown-content z-10 menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
-                    <li>
-                      <NavLink to="/provincial-committee">
-                        Provincial Committee
-                      </NavLink>
-                    </li>
                     <li>
                       <NavLink to="/advisory-council">Advisory Council</NavLink>
                     </li>

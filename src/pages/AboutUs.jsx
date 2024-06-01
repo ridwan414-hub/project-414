@@ -7,7 +7,7 @@ const AboutUs = () => {
     <Layout
       title={'About Us'}
       bannerTitle={'About Us'}
-      bannerDescription={'About Us Page Description....'}
+      bannerDescription={'We are a team of social workers who are passionate about helping others.'}
     >
       <AboutusPageOurTeamSection />
       <AboutUsFeatureSection />

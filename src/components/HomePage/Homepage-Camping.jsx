@@ -45,8 +45,8 @@ const HomepageCamping = () => {
   return (
     <section className="px-28 py-32 flex justify-center ">
       <div className="w-full max-w-7xl flex flex-col gap-10">
-        <h2 className="uppercase text-center text-4xl font-bold">
-          Our <span className="text-[#ed1c24]">Campaign</span>
+        <h2 className="uppercase text-center text-4xl font-semibold">
+          Our <span className="text-red-600">Campaigns</span>
         </h2>
         <div className="flex gap-2">
           {dataCamp?.map((camp, index) => (

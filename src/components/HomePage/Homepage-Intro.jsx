@@ -24,7 +24,7 @@ const HomepageIntro = () => {
   return (
     <div className="w-full bg-gradient-to-r from-cyan-50 to-blue-100 flex flex-col items-center py-16 gap-10 mt-12">
       <h1 className="text-5xl text-[#ed1c24] font-semibold text-center">
-        Voice of Muslims
+        Voice of <span className="text-blue-600">Muslims</span>
       </h1>
       <p className="text-2xl">
         Voice of Muslim Forum is a global socio-cultural and voluntary

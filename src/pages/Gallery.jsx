@@ -5,9 +5,9 @@ const Gallery = () => {
     <Layout
       title={'Gallery'}
       bannerTitle={'Gallery'}
-      bannerDescription={'Gallery Page Description....'}
+      bannerDescription={'Explore our latest activities and events.'}
     >
-      <GallerypagePictureSection/>
+      <GallerypagePictureSection />
     </Layout>
   );
 };
