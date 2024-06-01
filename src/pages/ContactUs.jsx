@@ -1,3 +1,4 @@
+import ContactUsSection from '../components/Contact Us/Contact-Us-Section';
 import Layout from '../layouts/Layout';
 
 const ContactUs = () => {
@@ -5,9 +6,9 @@ const ContactUs = () => {
       <Layout
         title={'Contact Us'}
         bannerTitle={'Contact Us'}
-        bannerDescription={'Contact Us Page Description....'}
+        bannerDescription={'We value your feedback and are here to assist you.'}
       >
-        Contact Us
+        <ContactUsSection />
       </Layout>
     );
 };

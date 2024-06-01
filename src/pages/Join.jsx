@@ -1,4 +1,4 @@
-import JoinSection from "../components/Join/Join-Section";
+import JoinSection from "../components/JoinPage/Join-Section";
 import Layout from "../layouts/Layout";
 
 const Join = () => {
@@ -6,7 +6,9 @@ const Join = () => {
     <Layout
       title={'Join us'}
       bannerTitle={'Join Us'}
-      bannerDescription={'Join Us Page Description....'}
+      bannerDescription={
+        'Join us to get access to all the features of our platform!'
+      }
     >
       <JoinSection />
     </Layout>

@@ -1,4 +1,4 @@
-import LoginForm from '../components/login/LoginForm';
+import LoginForm from '../components/LoginPage/LoginForm';
 import Layout from '../layouts/Layout';
 
 const Login = () => {
@@ -6,7 +6,7 @@ const Login = () => {
     <Layout
       title={'Log in'}
       bannerTitle={'Log in'}
-      bannerDescription={'Log in Page Description....'}
+      bannerDescription={'Log in To Explore More Features!'}
     >
       <LoginForm />
     </Layout>

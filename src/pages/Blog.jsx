@@ -1,13 +1,15 @@
+import BlogSection from '../components/BlogPage.jsx/BlogSection';
 import Layout from '../layouts/Layout';
-import BlogSection from './BlogPage.jsx/BlogSection';
 
 
 const Blog = () => {
   return (
     <Layout
-      title={'Blog'}
+      title={'Blogs'}
       bannerTitle={'Blogs'}
-      bannerDescription={'Blogs Page Description....'}
+      bannerDescription={
+        'Explore insightful articles and updates on various topics in our blog section.'
+      }
     >
       <BlogSection />
     </Layout>

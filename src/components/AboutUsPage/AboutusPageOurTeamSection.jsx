@@ -1,5 +1,5 @@
-import MembersListSection from '../../components/MembersListSection';
-import Layout from '../../layouts/Layout';
+import MembersListSection from '../MembersListSection';
+
 const people = [
   {
     name: 'Leslie Alexander',
@@ -27,20 +27,14 @@ const people = [
     imageUrl: 'https://www.svgrepo.com/show/452030/avatar-default.svg',
   },
 ];
-const PatronageCouncil = () => {
+
+const AboutusPageOurTeamSection = () => {
   return (
-    <Layout
-      title={'Patronage Council'}
-      bannerTitle={'Patronage Council'}
-      bannerDescription={'Patronage Council Page Description....'}
-    >
-      <MembersListSection
-        councilName={'Patronage Council Members'}
-        people={people}
-      />
-      ;
-    </Layout>
+    <MembersListSection
+      councilName={'Board of Directors'}
+      people={people}
+    />
   );
 };
 
-export default PatronageCouncil;
+export default AboutusPageOurTeamSection;

@@ -8,6 +8,7 @@ import PageBanner from './PageBanner';
 
 const Layout = ({
   children,
+  bannerOption = true,
   description,
   keywords,
   author,
@@ -27,16 +28,18 @@ const Layout = ({
       <TopBanner />
       <Header />
       <div className="w-full flex flex-col items-center">
-        <PageBanner
-          bannerTitle={bannerTitle}
-          bannerDescription={bannerDescription}
-        />
+        {bannerOption && (
+          <PageBanner
+            bannerTitle={bannerTitle}
+            bannerDescription={bannerDescription}
+          />
+        )}
         <main
-          className="border-2 border-gray-300 rounded-md m-4 w-full"
+          className="m-4 w-full"
           style={{
             minHeight: '70vh',
             backgroundColor: 'aliceblue',
-            maxWidth: '1280px',
+            // maxWidth: '1440px',
           }}
         >
           {children ? children : <Skeleton />}
@@ -46,12 +49,5 @@ const Layout = ({
     </div>
   );
 };
-// Layout.defaultProps = {
-//   children: 'Default children',
-//   title: 'Voice of Muslims',
-//   description: 'We all are Muslims and we are proud of it.',
-//   keywords: 'Donation Blog Muslim Remitance Halal Help Charity Zakat Sadqah',
-//   author: 'VOM Team',
-// };
 
 export default Layout;
