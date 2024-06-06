@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 // import { useWebsiteInfo } from '../contexts/WebsiteInfo';
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="navbar bg-base-100 flex justify-center shadow-lg ">
       <div className="max-w-[1280px] w-full flex justify-between">
-        <div className="navbar-start w-fit">
+        <div className="navbar-start w-full flex items-center justify-between flex-row-reverse">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -31,7 +31,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content dropdown-right right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -89,7 +89,7 @@ const Header = () => {
             </ul>
           </div>
 
-          <div className="flex lg:-mt-8 sm:mx-auto sm:w-full sm:max-w-sm sm:px-auto sm:-mt-2">
+          <div className="flex sm:max-w-sm sm:px-auto  ">
             <img
               className="w-12 h-12 mt-2 sm:w-16 sm:h-16 sm:mx-auto rounded-full"
               // src={site_logo}
@@ -116,7 +116,10 @@ const Header = () => {
             <div className="navbar-center hidden lg:flex">
               <li>
                 <div className="dropdown dropdown-bottom dropdown-hover">
-                  <div tabIndex={0} role="button">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                  >
                     Committee
                   </div>
                   <svg
@@ -173,7 +176,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar hidden lg:flex">
           <ul className="menu menu-horizontal z-10 px-1 gap-1">
             <li>
               <button className="border border-violet-600">
