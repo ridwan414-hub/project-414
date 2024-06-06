@@ -6,13 +6,13 @@ const HomepageIntro = () => {
       title: "Our Mission",
       description:
         "Our mission is to provide a platform for Muslims to share their thoughts, ideas, and experiences with the world. We aim to promote understanding and tolerance among people of different faiths and cultures.",
-      color: "red",
+      color: "pink",
     },
     {
       title: "Our Vision",
       description:
         "Our vision is to create a world where Muslims are respected and valued for their contributions to society. We believe that by sharing our stories and experiences, we can build bridges of understanding and cooperation between people of all backgrounds.",
-      color: "blue",
+      color: "lightblue",
     },
     {
       title: "Our Values",
@@ -27,7 +27,7 @@ const HomepageIntro = () => {
       color: "slateblue",
     },
   ];
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <div className="w-full bg-gradient-to-r from-cyan-50 to-blue-100 flex flex-col items-center px-4 py-16 gap-10 mt-12">
       <h1 className="text-4xl md:text-5xl text-[#ed1c24] font-semibold text-center">
@@ -43,10 +43,10 @@ const HomepageIntro = () => {
             key={index}
             style={{
               borderColor: data.color,
-              backgroundColor: isHovered ? data.color : "transparent",
+              transition: "background-color 0.3s ease", // Optional: smooth transition
             }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
             className={`dropdown shadow-xl rounded-box hover:dropdown-open ${
               index % 2 === 0
                 ? "mr-40 lg:mr-96 hover:dropdown-right border-r-2"
@@ -55,8 +55,15 @@ const HomepageIntro = () => {
           >
             <h2 className="cursor-pointer md:text-2xl">{data.title}</h2>
             <ul
+              style={{
+                color: 'black',
+                backgroundColor: hoveredIndex === index ? data.color : "",
+                transition: "background-color 0.3s ease", // Optional: smooth transition
+              }}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
               className={
-                "w-full lg:w-[150%] max-h-16 md:max-h-32 overflow-scroll no-scrollbar dropdown-content px-5 shadow-2xl bg-red-200 font-medium rounded-md mx-1 hover:bg-none"
+                "w-full lg:w-[150%] max-h-16 md:max-h-32 overflow-scroll no-scrollbar dropdown-content px-5 shadow-2xl rounded-md mx-1 hover:bg-none"
               }
             >
               <li className="text-center text-[10px] md:text-xs md:p-2 my-2">
