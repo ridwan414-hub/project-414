@@ -17,7 +17,7 @@ const Layout = ({
   bannerDescription,
 }) => {
   return (
-    <div>
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
@@ -46,7 +46,7 @@ const Layout = ({
         </main>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
