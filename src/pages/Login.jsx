@@ -7,6 +7,7 @@ const Login = () => {
       title={'Log in'}
       bannerTitle={'Log in'}
       bannerDescription={'Log in To Explore More Features!'}
+      bannerOption={false}
     >
       <LoginForm />
     </Layout>
