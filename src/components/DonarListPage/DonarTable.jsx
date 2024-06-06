@@ -122,13 +122,13 @@ const DonarTable = () => {
     },
   ];
   return (
-    <div className="overflow-x-auto px-36">
-      <div className="text-center py-16">
-        <h1 className="text-5xl py-2">
+    <div className="overflow-x-auto">
+      <div className="text-center py-16 px-4 md:px-28">
+        <h1 className="text-3xl md:text-5xl font-bold py-2">
           <span className="text-red-500">Peoples</span> who has{' '}
           <span className="text-green-500">donated</span> till last month
         </h1>
-        <p className="text-lg">
+        <p className="md:text-lg">
           Their contributions have made a significant impact on our mission,
           helping us make a difference in the community.
         </p>
