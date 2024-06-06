@@ -43,7 +43,7 @@ const HomepageIntro = () => {
             <h2 className="cursor-pointer text-2xl">{data.title}</h2>
             <ul
               className={
-                "md:w-full lg:w-[150%] max-h-32 overflow-scroll dropdown-content px-2 shadow-2xl bg-red-200 font-medium rounded-md ml-2 hover:bg-none"
+                "md:w-full lg:w-[150%] max-h-32 overflow-scroll no-scrollbar dropdown-content px-2 shadow-2xl bg-red-200 font-medium rounded-md ml-2 hover:bg-none"
               }
             >
               <li className="text-center text-[8px] md:text-xs md:p-2 my-2">
