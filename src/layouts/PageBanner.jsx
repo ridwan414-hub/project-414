@@ -31,11 +31,11 @@ const PageBanner = ({ bannerTitle, bannerDescription }) => {
         />
       </div>
       <div className="mx-auto flex justify-center max-w-7xl px-6 lg:px-8 ">
-        <div className=" max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-center text-white sm:text-6xl">
+        <div className="flex flex-col gap-5 max-w-2xl lg:mx-0">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-center text-white ">
             {bannerTitle ? bannerTitle : 'Work with us'}
           </h2>
-          <p className="mt-6 text-2xl leading-8 text-center text-balance text-gray-300">
+          <p className="md:text-2xl leading-8 text-center text-balance text-gray-300">
             {bannerDescription
               ? bannerDescription
               : 'Anim aute id magna aliqua ad ad non deserunt sunt'}
