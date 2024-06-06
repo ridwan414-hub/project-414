@@ -2,7 +2,7 @@ const PageBanner = ({ bannerTitle, bannerDescription }) => {
   return (
     <div className="w-full relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
-        src="https://c8.alamy.com/comp/2BGBF1M/arabic-calligraphy-means-feast-charity-vector-card-design-for-zakat-al-fitr-of-ramadan-2BGBF1M.jpg"
+        src="https://i.ibb.co/nbkcW85/OIP-u-XXJOn-So-TDmk-JU3-B3-me-AAHa-EK-w-290-h-180-c-7-r-0-o-5-pid-1.jpg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-20"
       />
