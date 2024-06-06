@@ -2,7 +2,7 @@ const PageBanner = ({ bannerTitle, bannerDescription }) => {
   return (
     <div className="w-full relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
-        src="https://c8.alamy.com/comp/2BGBF1M/arabic-calligraphy-means-feast-charity-vector-card-design-for-zakat-al-fitr-of-ramadan-2BGBF1M.jpg"
+        src="https://i.ibb.co/nbkcW85/OIP-u-XXJOn-So-TDmk-JU3-B3-me-AAHa-EK-w-290-h-180-c-7-r-0-o-5-pid-1.jpg"
         alt=""
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-20"
       />
@@ -31,11 +31,11 @@ const PageBanner = ({ bannerTitle, bannerDescription }) => {
         />
       </div>
       <div className="mx-auto flex justify-center max-w-7xl px-6 lg:px-8 ">
-        <div className=" max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-center text-white sm:text-6xl">
+        <div className="flex flex-col gap-5 max-w-2xl lg:mx-0">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-center text-white ">
             {bannerTitle ? bannerTitle : 'Work with us'}
           </h2>
-          <p className="mt-6 text-2xl leading-8 text-center text-balance text-gray-300">
+          <p className="md:text-2xl leading-8 text-center text-balance text-gray-300">
             {bannerDescription
               ? bannerDescription
               : 'Anim aute id magna aliqua ad ad non deserunt sunt'}

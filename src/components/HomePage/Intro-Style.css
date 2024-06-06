@@ -1,0 +1,7 @@
+.hoverComponent {
+    background-color: initialColor; /* Replace with the initial background color */
+  }
+  
+  .hoverComponent:hover {
+    background-color: black; /* Replace with the background color on hover */
+  }

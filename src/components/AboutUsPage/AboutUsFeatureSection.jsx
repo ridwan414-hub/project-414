@@ -36,14 +36,14 @@ const AboutUsFeatureSection = () => {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-5xl py-6 font-semibold leading-7 text-indigo-600">
+        <div className="flex flex-col gap-5 mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-3xl text-center sm:text-5xl py-6 font-semibold text-indigo-600">
             Our Missions and Initiatives
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className=" text-xl md:text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Making a Difference in the Community
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className=" md:text-lg leading-8 text-gray-600">
             Our initiatives are designed to uplift and support individuals and
             communities. We believe in the power of education, health, and
             cultural understanding to create a better world for everyone.

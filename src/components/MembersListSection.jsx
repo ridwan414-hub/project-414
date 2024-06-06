@@ -2,11 +2,11 @@ const MembersListSection = ({ people,councilName }) => {
   return (
     <div className="bg-white py-18 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="flex flex-col gap-5 max-w-2xl">
+          <h2 className="text-2xl sm:text-4xl font-bold text-center md:text-left tracking-tight text-gray-900 ">
             Meet Our {councilName}
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="md:text-lg leading-8 text-gray-600">
             Embrace freedom as you navigate new challenges, mastering each with
             confidence and grace. Live with purpose, thriving on opportunities
             and overcoming obstacles with resilience and strength.

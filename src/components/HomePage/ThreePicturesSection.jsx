@@ -10,19 +10,19 @@ const ThreePicturesSection = () => {
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
             src="https://www.oneindia.com/img/2015/07/24-1437754794-hunger.jpg"
-            alt
+            alt=""
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
             src="https://media.istockphoto.com/id/143176152/photo/real-people-from-rural-india-happy-parents-with-their-children.jpg?s=612x612&w=0&k=20&c=nu3rccbRGJrIeYSJ2IJ_v1paSyzPW8x1cUJd_6lHeiQ="
-            alt
+            alt=""
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
             src="https://t4.ftcdn.net/jpg/02/33/74/39/360_F_233743951_I3Z5uGggR8v9sUi9HOmmSQYmzPawczZl.jpg"
-            alt
+            alt=""
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
@@ -57,7 +57,11 @@ const ThreePicturesSection = () => {
               fill="currentColor"
               className="mx-3 text-slate-300"
             >
-              <circle cx={1} cy={1} r={1} />
+              <circle
+                cx={1}
+                cy={1}
+                r={1}
+              />
             </svg>
             <svg
               width={24}

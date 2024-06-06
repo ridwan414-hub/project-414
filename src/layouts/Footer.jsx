@@ -6,8 +6,9 @@ const Footer = () => {
   // const [WebsiteInfo] = useWebsiteInfo()
   return (
     <footer className=" bg-base-200 flex justify-center">
-      <div className="footer p-10 text-base-content max-w-[1280px]">
-        <aside>
+      <div className="footer flex flex-wrap justify-between px-10 md:px-28 py-10 text-base-content max-w-[1280px]">
+        
+      <aside>
           <div className="ml-2 mt-1 grid grid-flow-col gap-4">
             <a>
               <svg
@@ -53,13 +54,6 @@ const Footer = () => {
           <p className="">Working since 1992</p>
         </aside>
         <nav>
-          <h6 className="footer-title">Services</h6>
-          <Link className="link link-hover">Branding</Link>
-          <Link className="link link-hover">Sponsorship</Link>
-          <Link className="link link-hover">Finincial Aid</Link>
-          <Link className="link link-hover">Advertisement</Link>
-        </nav>
-        <nav>
           <h6 className="footer-title">Organization</h6>
           <Link to="/about-us" className="link link-hover">
             About us
@@ -75,6 +69,13 @@ const Footer = () => {
           <Link className="link link-hover">Terms of use</Link>
           <Link to='/privacy-policy'className="link link-hover">Privacy policy</Link>
           <Link className="link link-hover">Cookie policy</Link>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <Link className="link link-hover">Branding</Link>
+          <Link className="link link-hover">Sponsorship</Link>
+          <Link className="link link-hover">Finincial Aid</Link>
+          <Link className="link link-hover">Advertisement</Link>
         </nav>
       </div>
     </footer>

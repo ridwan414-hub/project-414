@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const FindLocationSection = () => {
 
   return (
-    <div className="w-2/5 flex flex-col gap-7">
+    <div className="w-full flex flex-col gap-7">
       <h2 className="font-bold text-lg pb-1 border-b-2 border-red-500">
         Find Our Location
       </h2>
