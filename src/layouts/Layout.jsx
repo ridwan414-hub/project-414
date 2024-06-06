@@ -39,7 +39,7 @@ const Layout = ({
           style={{
             minHeight: '70vh',
             backgroundColor: 'aliceblue',
-            // maxWidth: '1440px',
+            width: '100%',
           }}
         >
           {children ? children : <Skeleton />}

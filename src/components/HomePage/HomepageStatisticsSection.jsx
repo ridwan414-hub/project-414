@@ -14,7 +14,7 @@ const HomepageStatisticsSection = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div className="bg-gradient-to-r py-24 sm:py-32 flex w-full">
+    <div className="bg-gradient-to-r sm:py-32 flex w-full">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat) => (
