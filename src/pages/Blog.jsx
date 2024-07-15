@@ -5,9 +5,11 @@ import Layout from '../layouts/Layout';
 const Blog = () => {
   return (
     <Layout
-      title={'Blog'}
+      title={'Blogs'}
       bannerTitle={'Blogs'}
-      bannerDescription={'Blogs Page Description....'}
+      bannerDescription={
+        'Explore insightful articles and updates on various topics in our blog section.'
+      }
     >
       <BlogSection />
     </Layout>

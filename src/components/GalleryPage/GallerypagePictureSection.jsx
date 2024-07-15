@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 
 const events = [
   {
@@ -43,21 +41,51 @@ const events = [
     image:
       'https://plus.unsplash.com/premium_photo-1683140523610-13deecbd20b1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVscGluZyUyMHRoZSUyMHBvb3J8ZW58MHx8MHx8fDA%3D',
   },
+  {
+    name: 'Health and Wellness Fair',
+    description:
+      'Explore a variety of health and wellness activities, including free health screenings, fitness classes, and wellness workshops.',
+    date: '30th April 2022',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVGNuPF451LfvTc1o4IDAFFkxIkqgQPqk4Q&s',
+  },
+  {
+    name: 'Art and Craft Fair',
+    description:
+      'Discover local artists and artisans at our art and craft fair. Enjoy live demonstrations, workshops, and unique handmade items for sale.',
+    date: '7th May 2022',
+    image:
+      'https://media.licdn.com/dms/image/D4D12AQFuDJVmd3Tr0Q/article-cover_image-shrink_720_1280/0/1690644906401?e=2147483647&v=beta&t=t_wxMMroe7M-K9XOnWc8y9oONwCQnCSgQiN9I-tZkoU',
+    style: 'row-span-1 sm:col-span-2',
+  },
+  {
+    name: 'Youth Mentorship Program',
+    description:
+      'Support our youth by becoming a mentor. This program connects experienced professionals with young people looking to learn and grow.',
+    date: '15th May 2022',
+    image: 'https://lasku-ph.com/assets/images/CALATAGAN_27.19920207_large.JPG',
+  },
+  {
+    name: 'Senior Support Services',
+    description:
+      'Provide companionship and support to seniors in our community through home visits, phone calls, and assistance with daily tasks.',
+    date: '20th May 2022',
+    image:
+      'https://cdn.gobankingrates.com/wp-content/uploads/2020/02/charity-volunteer-iStock-1130655067.jpg',
+  },
+  {
+    name: 'Cultural Festival',
+    description:
+      'Celebrate the diverse cultures in our community with music, dance, food, and cultural exhibits from around the world.',
+    date: '25th May 2022',
+    image:
+      'https://www.mcgi.org/wp-content/uploads/2021/05/mcgi-untv-serbisyong-bayanihan-charity.png',
+  },
 ];
 
-
-
-const PicturesSection = () => {
+const GallerypagePictureSection = () => {
   return (
-    <div className="w-full bg-slate-50 flex flex-col items-center py-16 px-4 sm:px-8 md:px-16 lg:px-32 gap-10 mt-12">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
-        Our <span className="text-blue-600">Recent Activities</span> At a{' '}
-        <span className="text-red-600">Glance</span>
-      </h1>
-      <p className="text-center px-4 md:px-16 lg:px-32">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-        cupiditate voluptate porro non nemo est obcaecati provident laboriosam?
-      </p>
+    <div className="w-full bg-slate-50 flex flex-col items-center py-12 px-4 sm:px-8 md:px-16 lg:px-32 gap-10 mt-2">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-screen-xl">
         {events.map((event, index) => (
           <div key={index} className={`relative ${event?.style}`}>
@@ -92,9 +120,6 @@ const PicturesSection = () => {
                 <p className="text-sm sm:text-base md:text-lg mb-4 sm:mb-8">
                   {event.description}
                 </p>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mx-auto">
-                  <Link to="/events">See More</Link>
-                </button>
               </div>
             </div>
           </div>
@@ -104,5 +129,4 @@ const PicturesSection = () => {
   );
 };
 
-
-export default PicturesSection;
+export default GallerypagePictureSection;

@@ -1,13 +1,13 @@
+import GallerypagePictureSection from '../components/GalleryPage/GallerypagePictureSection';
 import Layout from '../layouts/Layout';
-// import GalleryCarosel from '../components/GalleryPage/GalleryCarosel';
 const Gallery = () => {
   return (
     <Layout
       title={'Gallery'}
       bannerTitle={'Gallery'}
-      bannerDescription={'Gallery Page Description....'}
+      bannerDescription={'Explore our latest activities and events.'}
     >
-      {/* <GalleryCarosel /> */}
+      <GallerypagePictureSection />
     </Layout>
   );
 };

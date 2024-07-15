@@ -6,7 +6,9 @@ const DonarList = () => {
     <Layout
       title={'Donar List'}
       bannerTitle={'Donar List'}
-      bannerDescription={'Donar List Page Description....'}
+      bannerDescription={
+        'Explore the list of generous donors who have contributed to our cause. Their support helps us make a significant impact in the community.'
+      }
     >
       <DonarTable />
     </Layout>

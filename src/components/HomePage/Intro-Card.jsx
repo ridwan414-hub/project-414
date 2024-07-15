@@ -6,7 +6,6 @@ const IntroCard = ({ data }) => {
     >
       <h2 className="cursor-pointer text-2xl">{title}</h2>
       <ul
-        // style={{'backgroundColor':'red'}}
         className={'dropdown-content text-sm px-2 shadow-lg bg-red-200 font-medium rounded-box w-96 h-32 ml-1 hover:bg-none'}
       >
         <li className="text-center p-2 mt-6">
