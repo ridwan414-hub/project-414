@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import { Helmet } from "react-helmet";
-import Skeleton from "../components/Skeleton";
-import TopBanner from "./TopBanner";
-import PageBanner from "./PageBanner";
+import Header from './Header';
+import Footer from './Footer';
+import { Helmet } from 'react-helmet';
+import Skeleton from '../components/Skeleton';
+import TopBanner from './TopBanner';
+import PageBanner from './PageBanner';
 // import { Toaster } from 'react-hot-toast';
 
 const Layout = ({
@@ -20,18 +20,9 @@ const Layout = ({
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <meta
-          name="description"
-          content={description}
-        />
-        <meta
-          name="keywords"
-          content={keywords}
-        />
-        <meta
-          name="author"
-          content={author}
-        />
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <meta name="author" content={author} />
         <title>{title}</title>
       </Helmet>
       <TopBanner />
@@ -46,9 +37,9 @@ const Layout = ({
         <main
           className="m-4 w-full"
           style={{
-            minHeight: "70vh",
-            backgroundColor: "aliceblue",
-            width: "100%",
+            minHeight: '70vh',
+            backgroundColor: 'aliceblue',
+            width: '100%',
           }}
         >
           {children ? children : <Skeleton />}
